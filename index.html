@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Im Dola</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav__content">
+                <div class="nav__pro">
+                    <a href="#" class="pro__img">
+                        <img src="./img/pro.jpg" class="pro" alt="pro">
+                    </a>
+                    <a href="#" class="full__name">
+                        <p class="name">Bishu </p>
+                        <p class="name gray">Bazar</p>
+                    </a>
+                </div>
+                <div class="nav__btn">
+                    <a href="#" class="btn left underline">about
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="main">
+        <div class="swiper__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide__img">
+                            <img src="./img/1.jpg" alt="img1">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide__content">
+                            <h1 class="swiper__header">
+                                <a href="#" class="swiper__header">GINKELSE <br>
+                                    <span class="left underline">HEIDE</span> </a>
+                                <a href="#" class="transparent__header">05</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__img ">
+                            <img src="./img/2.jpg" alt="img2">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide__content">
+                            <h1 class="swiper__header">
+                                <a href="#" class="swiper__header">ROAD TRIP <br>
+                                    <span class="left underline">SWEDEN </a></a>
+                                <a href="#" class="transparent__header">06</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__img">
+                            <img src="./img/3.jpg" alt="img3">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide__content">
+                            <h1 class="swiper__header">
+                                <a href="#" class="swiper__header">LONDON <br>
+                                    <span class="left underline">SUBURBS</span> </a>
+                                <a href="#" class="transparent__header">05</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="swiper.js"></script>
+
+</body>
+
+</html>
