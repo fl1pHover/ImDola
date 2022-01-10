@@ -247,6 +247,18 @@ nav {
                             transition: 1s ease;
                             transition-delay: 0.95s;
                         }
+                        video {
+                            display: block;
+                            height: 110%;
+                            object-fit: cover;
+                            transform: .1 ease;
+                            transition-delay: 0.95s;
+                        }
+                        .gif {
+                            background: url(/img/dola5.gif);
+                            background-size: cover;
+                            background-position: center;
+                        }
                         .overlay {
                             position: absolute;
                             top: 0;

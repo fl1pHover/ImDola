@@ -283,6 +283,23 @@ nav .container .nav__content .nav__btn a::after {
           transition-delay: 0.95s;
 }
 
+#main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img video {
+  display: block;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: .1 ease;
+          transform: .1 ease;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+#main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img .gif {
+  background: url(/img/dola5.gif);
+  background-size: cover;
+  background-position: center;
+}
+
 #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img .overlay {
   position: absolute;
   top: 0;
