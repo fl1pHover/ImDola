@@ -1,0 +1,3 @@
+<svg class="m-slider__button-shape" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle class="m-slider__button-path" vector-effect="non-scaling-stroke" transform="translate(1 1)" r="22" cx="22" cy="22"/>
+</svg>
