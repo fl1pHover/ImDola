@@ -19,8 +19,20 @@ body {
   text-transform: uppercase;
 }
 
+nav .container .nav__content {
+  overflow-x: none;
+  padding: 1px;
+}
+
+nav .container .nav__content .nav__pro {
+  width: 300px;
+}
+
 nav .container .nav__content .nav__pro .full__name {
   color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: -1;
 }
 
 nav .container .nav__content .nav__btn a {
@@ -38,6 +50,12 @@ nav .container .nav__content .nav__btn a::before {
 
 nav .container .nav__content .nav__btn a::after {
   background: white;
+}
+
+.full__name.hide {
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  opacity: 0;
 }
 
 .content__header {
@@ -120,23 +138,15 @@ nav .container .nav__content .nav__btn a::after {
 }
 
 .content .gallery__container .content__img {
-  width: 100%;
-  height: calc(100% - 6rem);
-  height: 100%;
+  height: calc(100% + 6rem);
   position: relative;
   overflow: hidden;
   font-size: 16px;
   padding: 4rem 2rem;
 }
 
-.content .gallery__container .content__img .img-parallax {
+.content .gallery__container .content__img img {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  pointer-events: none;
 }
 
 @-webkit-keyframes img {
@@ -159,5 +169,10 @@ nav .container .nav__content .nav__btn a::after {
     -webkit-transform: translate3d(0px, -86.0614px, 0px) !important;
             transform: translate3d(0px, -86.0614px, 0px) !important;
   }
+}
+
+.parallax {
+  min-height: 400px;
+  background: transparent;
 }
 /*# sourceMappingURL=content.css.map */
