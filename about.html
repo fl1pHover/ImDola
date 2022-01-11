@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Im Dola</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="transition">
+        <div class="cover cover1"></div>
+        <div class="cover cover2"></div>
+
+    </div>
+    <nav id="swup" class="transition-fade">
+        <div class="container">
+            <div class="nav__content">
+                <a href="index.html" class="nav__pro links">
+                    <span h class="pro__img ">
+                        <img src="./img/dola4.jpg" class="pro" alt="pro">
+                    </span>
+                    <span class="full__name">
+                        <p class="name">Im </p>
+                        <p class="name gray">Dola</p>
+                    </span>
+                </a>
+                <div class="nav__btn">
+                    <a href="about.html" class="btn left underline link">about
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="about__container">
+            <div class="about__content">
+                <h1 class="swiper__header">
+                    HELLO
+                </h1>
+                <p class="about__text">
+                    I am Thijs Pausma, 29 years old and live in Heelsum.
+                    <span class="ani1" style="transition-delay: 4s;">
+                        I work as a graphic designer, </span> <span class="ani2">photographer and occasionally as a DJ
+                        at student and company </span><span class="ani3">
+                        parties. As a photographer, I also love to shoot a lot of photos in my free time.</span> <span class="ani4">For example, I
+                        like to join parties to capture artists and light shows, but I also regularly go out early to
+                        capture the peace of nature.</span>
+
+                </p>
+            </div>
+        </div>
+        <div class="about__footer">
+            <div class="about__container">
+                <div class="about__icon">
+                    <a href=""> <i class="fab fa-instagram"></i></a>
+                    <a href=""> <i class="fab fa-facebook"></i></a>
+                    <a href=""> <i class="fab fa-youtube"></i></a>
+
+                </div>
+                <div class="about__mail">
+                    <a href="about.html" class="btn left underline">dola@mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const link = document.querySelector(".links");
+        const transition = document.querySelector(".transition");
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+    </script>
+</body>
+
+</html>

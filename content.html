@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Im Dola</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/content.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="transition">
+        <div class="cover cover1"></div>
+        <div class="cover cover2"></div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="nav__content">
+                <a href="index.html" class="nav__pro links">
+                    <span class="pro__img ">
+                        <img src="./img/dola4.jpg" class="pro" alt="pro">
+                    </span>
+                    <span class="full__name">
+                        <p class="name">Im </p>
+                        <p class="name gray">Dola</p>
+                    </span>
+                </a>
+                <div class="nav__btn">
+                    <a href="about.html" class="btn left underline link">about
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="content__container">
+            <div class="counter__header">
+                <span class="transparent__header">0</span><span class="count transparent__header">5</span>
+                <h1 class="content__header">
+                    <span class="ani1">
+                        Moody
+                    </span>
+                    <span class="ani2">
+                        morning
+                    </span>
+                    <span class="ani3">
+                        in
+                    </span>
+                    <span class="ani4" style="transition-delay: 3000ms;">
+                        January
+                    </span>
+                    <span class="small__header">Cold short days </span>
+                </h1>
+
+            </div>
+        </div>
+        <div class="gallery__container">
+            <div class="content__gallery">
+                <div class="content__img" data-aos="fade-up">
+                    <img src="/img/dola1.jpg" alt="">
+                </div>
+                <div class="content__img" data-aos="fade-up">
+                    <img src="/img/dola2.jpg" alt="">
+                </div>
+                <div class="content__img" data-aos="fade-up">
+                    <img src="/img/dola3.jpg" alt="">
+                </div>
+                <div class="content__img" data-aos="fade-up">
+                    <img src="/img/dola4.jpg" alt="">
+                </div>
+                <div class="content__img" data-aos="fade-up">
+                    <img src="/img/dola5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const link = document.querySelector(" .links ");
+        const transition = document.querySelector(" .transition ");
+        link.addEventListener(" click ", (e) => {
+            e.preventDefault();
+            transition.classList.add(" slide ");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+    </script>
+    <script>
+        var counter = document.querySelector(" .count ");
+        let count = 0;
+
+        setInterval(() => {
+            if (count < 5) {
+                count++;
+                counter.innerText = count;
+            }
+        }, 100)
+    </script>
+    <script src=" https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+    </script>
+
+    <script type=" text/javascript ">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = docoment.querySelectorAll('reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerheight;
+                var reveatop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
