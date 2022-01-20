@@ -1,0 +1,27 @@
+@mixin pageTransition() {
+    .cover {
+        position: absolute;
+        height: 500vh;
+        width: 100vw;
+        top: 0;
+        left: -100vw;
+        z-index: 1000;
+    }
+    .transition.slide .cover1 {
+        background-color: $dark;
+        animation: slide 0.5s ease-in forwards;
+    }
+    .transition.slide .cover2 {
+        background-color: white;
+        animation: slide 0.5s ease-in forwards;
+        animation-delay: 0.3s;
+    }
+    @keyframes slide {
+        0% {
+            left: -100vw;
+        }
+        100% {
+            left: 0;
+        }
+    }
+}

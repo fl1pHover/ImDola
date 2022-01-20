@@ -1,0 +1,110 @@
+.grid__landscape {
+    // grid-column: span 19;
+    // grid-column-start: span 7;
+    width: 530px;
+    height: 370px;
+    animation: land 3s ease;
+    transition-delay: 2.5s;
+    overflow: hidden;
+}
+
+.grid__portrait {
+    // grid-column: span 10;
+    // grid-column: span 14;
+    width: 370px;
+    height: 530px;
+    animation: port 3s ease;
+    transition-delay: 2s;
+    overflow: hidden;
+}
+
+.grid__sqaure {
+    // grid-column: span 12;
+    // grid-column: span 12;
+    width: 450px;
+    height: 450px;
+    animation: square 3s ease;
+    transition-delay: 2s;
+    overflow: hidden;
+}
+
+@keyframes land {
+    from {
+        height: 290px;
+    }
+    to {
+        height: 370px;
+    }
+}
+
+@keyframes port {
+    from {
+        height: 470px;
+    }
+    to {
+        height: 530px;
+    }
+}
+
+@keyframes square {
+    from {
+        height: 270px;
+    }
+    to {
+        height: 450px;
+    }
+}
+
+@keyframes overviewImg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#overview {
+    padding: calc(4rem + 46px) 0 4rem;
+    .container {
+        max-width: 1440px;
+        padding: 3rem 2rem;
+        margin: auto;
+        .grid__overview {
+            display: grid;
+            grid-template-columns: repeat(35, 1fr);
+            grid-template-rows: repeat(70, 1fr);
+            &:before {
+                content: "";
+                grid-column: 1/1;
+                grid-row: 1/1;
+                padding-bottom: 100%;
+                width: 0;
+            }
+            .grid__img {
+                position: absolute;
+                overflow: hidden;
+                img {
+                    transform: scale(1.1);
+                    animation: overviewImg 1.5s linear;
+                }
+            }
+            .grid__img1 {
+                grid-column-start: 22;
+                grid-row-start: 1;
+            }
+            .grid__img2 {
+                grid-column-start: 6;
+                grid-row-start: 7;
+            }
+            .grid__img3 {
+                grid-column-start: 20;
+                grid-row-start: 17;
+            }
+            .grid__img4 {
+                grid-column-start: 0;
+                grid-row-start: 27;
+            }
+        }
+    }
+}

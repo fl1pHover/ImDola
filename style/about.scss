@@ -1,20 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-$white: white;
-$dark: #1d1f26;
-$gray: rgba(29,
-31,
-38,
-.5);
-$swiper-header: 3rem;
-$about-content: 4rem;
-$big-header:10rem;
+// @import 'transition';
+@import 'var';
 body {
     overflow-y: auto;
 }
@@ -56,6 +41,7 @@ body {
 #about {
     padding: calc(4rem + 46px) 0 4rem;
     font-family: 'Nunito Sans', sans-serif;
+    animation: about 3s ease;
     .about__container {
         max-width: 992px;
         text-align: center;
@@ -66,14 +52,17 @@ body {
             font-size: 4rem;
             .swiper__header {
                 text-align: center;
-                margin: 1.5rem 0 2.5rem;
+                margin-top: 2rem;
+                letter-spacing: 2px;
             }
             .about__text {
                 font-weight: 200;
-                line-height: 1.25;
-                display: inline-block;
-                // animation: text 1s ease;
-                transition-delay: 5s;
+                line-height: 1.2;
+                transform: translateY(4rem);
+                margin-bottom: 60px;
+                span {
+                    display: inline-block;
+                }
             }
         }
     }
@@ -83,7 +72,7 @@ body {
             justify-content: center;
             align-items: center;
             .about__icon {
-                i {
+                a i {
                     font-size: 2.5rem;
                     color: #f5f0ec;
                     opacity: 1;
@@ -99,83 +88,37 @@ body {
             }
         }
     }
-}
-
-@keyframes text {
-    from {
-        opacity: 0;
-        transform: translateY(4rem);
-        // transition: transform 1s cubic-bezier(.165, .84, .44, 1), opacity 1s cubic-bezier(.165, .84, .44, 1);
-        transition-delay: 4s;
+    @keyframes text {
+        from {
+            opacity: 0;
+            transform: translateY(4rem);
+            transition: 2s;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .ani0 {
+        font-weight: 200;
+        line-height: 1.2;
+        display: inline-block;
+        animation: text 0.8s ease;
     }
-}
-
-.ani1 {
-    font-weight: 200;
-    line-height: 1.25;
-    display: inline-block;
-    animation: text 1s ease;
-    transition-delay: 4s !important;
-}
-
-.ani2 {
-    font-weight: 200;
-    line-height: 1.25;
-    display: inline-block;
-    animation: text 1.2s ease;
-}
-
-.ani3 {
-    font-weight: 200;
-    line-height: 1.25;
-    display: inline-block;
-    animation: text 1.5s ease;
-}
-
-.ani4 {
-    font-weight: 200;
-    line-height: 1.25;
-    display: inline-block;
-    animation: text 1.8s ease;
-}
-
-.ani5 {
-    font-weight: 200;
-    line-height: 1.25;
-    display: inline-block;
-    animation: text 2s ease;
-}
-
-.cover {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: -100vw;
-    bottom: -100vh;
-    z-index: 1000;
-}
-
-.transition.slide .cover1 {
-    background-color: $dark;
-    animation: slide 0.3s ease-in-out forwards;
-}
-
-.transition.slide .cover2 {
-    background-color: white;
-    animation: slide 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-@keyframes slide {
-    from {
-        left: -100vw;
+    @keyframes slide {
+        from {
+            left: -100vw;
+        }
+        to {
+            left: 0;
+        }
     }
-    to {
-        left: 0;
+    @keyframes about {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }

@@ -11,19 +11,22 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/about.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="transition">
+    <div class="transition ">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
-
     </div>
-    <nav id="swup" class="transition-fade">
+    <nav>
         <div class="container">
             <div class="nav__content">
                 <a href="index.html" class="nav__pro links">
-                    <span h class="pro__img ">
+                    <span class="pro__img ">
                         <img src="./img/dola4.jpg" class="pro" alt="pro">
                     </span>
                     <span class="full__name">
@@ -32,7 +35,8 @@
                     </span>
                 </a>
                 <div class="nav__btn">
-                    <a href="about.html" class="btn left underline link">about
+
+                    <a href="about.html" class="btn left underline">about
                     </a>
                 </div>
             </div>
@@ -44,16 +48,39 @@
                 <h1 class="swiper__header">
                     HELLO
                 </h1>
-                <p class="about__text">
-                    I am Thijs Pausma, 29 years old and live in Heelsum.
-                    <span class="ani1" style="transition-delay: 4s;">
-                        I work as a graphic designer, </span> <span class="ani2">photographer and occasionally as a DJ
-                        at student and company </span><span class="ani3">
-                        parties. As a photographer, I also love to shoot a lot of photos in my free time.</span> <span class="ani4">For example, I
-                        like to join parties to capture artists and light shows, but I also regularly go out early to
-                        capture the peace of nature.</span>
+                <div class="about__text">
+                    <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                        Намайг Должин (a.k.a Dola) гэдэг. Одоогийн Баруун</span>
+                    <span data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"> Австралийн их
+                        сургуульд
+                        маркетинг,
+                        менежментийн </span>
+                    <span data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000"> чиглэлээр сурч буй
+                        мастерын
+                        оюутан. Нягтлан бодогч</span>
+                    <span data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000"> мэргэжилтэй хэдий ч
+                        төгсөөд үндсэн мэргэжлээрээ нэг
+                        их</span>
 
-                </p>
+                    <span data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">их удаан ажиллахгүйгээр
+                        менежмент, маркетингийн чиглэлээр ажиллах болсон.
+                    </span>
+
+                </div>
+                <div class="about__text">
+                    <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                        6 жил ажилласны дараа хамаг юм дуусаад, зогсчихсон
+                        юм шиг</span>
+                    <span data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"> санагдаад сурах
+                        хэрэгтэй юм байна гэж шийдэн
+                        гадагшаа</span>
+                    <span data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000"> явахаар болж
+                        ажлаасаа гарсан ч ковидоос болж
+                        жил гаран</span>
+                    <span data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000"> онлайнаар сурчээ.
+                        Энэ хугацаанд YouTube
+                        дээр контент бүтээж эхэлж…</span>
+                </div>
             </div>
         </div>
         <div class="about__footer">
@@ -73,14 +100,20 @@
     </section>
 
     <script>
-        const link = document.querySelector(".links");
+        const links = document.querySelector(".links");
         const transition = document.querySelector(".transition");
-        link.addEventListener("click", (e) => {
+        links.addEventListener("click", (e) => {
             e.preventDefault();
             transition.classList.add("slide");
             setTimeout(() => {
-                window.location = link.href;
+                window.location = links.href;
             }, 900);
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // once: true,
         });
     </script>
 </body>

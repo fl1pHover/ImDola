@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - Im Dola</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/overview.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="transition">
+        <div class="cover cover1"></div>
+        <div class="cover cover2"></div>
+    </div>
+    <nav id="swup" class="transition-fade">
+        <div class="container">
+
+            <div class="nav__content">
+                <a href="index.html" class="nav__pro">
+                    <span class="pro__img ">
+                        <img src="./img/dola4.jpg" class="pro" alt="pro">
+                    </span>
+                    <span class="full__name">
+                        <p class="name">Im </p>
+                        <p class="name gray">Dola</p>
+                    </span>
+                </a>
+                <div class="nav__btn">
+
+                    <a href="about.html" class="btn left underline link">about
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="overview">
+        <div class="container">
+            <div class="grid__overview">
+                <div class="grid__img1 ">
+                    <div class="grid__img grid__landscape" data-aos="fade-up" data-aos-delay="250">
+                        <img src="/img/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid__img2">
+                    <div class="grid__img grid__portrait" data-aos="fade-up" data-aos-delay="350">
+                        <img src="/img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid__img3">
+                    <div class=" grid__img grid__sqaure" data-aos="fade-up" data-aos="fade-up" data-aos-delay="1050">
+                        <img src="/img/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid__img4" data-aos="fade-up">
+                    <div class="grid__img grid__landscape" data-aos="fade-up" data-aos-delay="1050">
+                        <img src="/img/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="transition-wipe overlap"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1000,
+        });
+    </script>
+    <script>
+        const nav__pro = document.querySelector(".nav__pro");
+        const link = document.querySelector(".link");
+        // Animation class
+        const transition = document.querySelector(".transition");
+
+        // About animation
+        nav__pro.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = nav__pro.href;
+            }, 900);
+        });
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+
+        // Slide 1 animation
+    </script>
+</body>
+
+</html>

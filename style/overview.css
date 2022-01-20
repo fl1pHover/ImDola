@@ -1,0 +1,175 @@
+.grid__landscape {
+  width: 530px;
+  height: 370px;
+  -webkit-animation: land 3s ease;
+          animation: land 3s ease;
+  -webkit-transition-delay: 2.5s;
+          transition-delay: 2.5s;
+  overflow: hidden;
+}
+
+.grid__portrait {
+  width: 370px;
+  height: 530px;
+  -webkit-animation: port 3s ease;
+          animation: port 3s ease;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  overflow: hidden;
+}
+
+.grid__sqaure {
+  width: 450px;
+  height: 450px;
+  -webkit-animation: square 3s ease;
+          animation: square 3s ease;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  overflow: hidden;
+}
+
+@-webkit-keyframes land {
+  from {
+    height: 290px;
+  }
+  to {
+    height: 370px;
+  }
+}
+
+@keyframes land {
+  from {
+    height: 290px;
+  }
+  to {
+    height: 370px;
+  }
+}
+
+@-webkit-keyframes port {
+  from {
+    height: 470px;
+  }
+  to {
+    height: 530px;
+  }
+}
+
+@keyframes port {
+  from {
+    height: 470px;
+  }
+  to {
+    height: 530px;
+  }
+}
+
+@-webkit-keyframes square {
+  from {
+    height: 270px;
+  }
+  to {
+    height: 450px;
+  }
+}
+
+@keyframes square {
+  from {
+    height: 270px;
+  }
+  to {
+    height: 450px;
+  }
+}
+
+@-webkit-keyframes overviewImg {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes overviewImg {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+#overview {
+  padding: calc(4rem + 46px) 0 4rem;
+}
+
+#overview .container {
+  max-width: 1440px;
+  padding: 3rem 2rem;
+  margin: auto;
+}
+
+#overview .container .grid__overview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[35];
+      grid-template-columns: repeat(35, 1fr);
+  -ms-grid-rows: (1fr)[70];
+      grid-template-rows: repeat(70, 1fr);
+}
+
+#overview .container .grid__overview:before {
+  content: "";
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  padding-bottom: 100%;
+  width: 0;
+}
+
+#overview .container .grid__overview .grid__img {
+  position: absolute;
+  overflow: hidden;
+}
+
+#overview .container .grid__overview .grid__img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-animation: overviewImg 1.5s linear;
+          animation: overviewImg 1.5s linear;
+}
+
+#overview .container .grid__overview .grid__img1 {
+  -ms-grid-column: 22;
+      grid-column-start: 22;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+#overview .container .grid__overview .grid__img2 {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+}
+
+#overview .container .grid__overview .grid__img3 {
+  -ms-grid-column: 20;
+      grid-column-start: 20;
+  -ms-grid-row: 17;
+      grid-row-start: 17;
+}
+
+#overview .container .grid__overview .grid__img4 {
+  -ms-grid-column: 0;
+      grid-column-start: 0;
+  -ms-grid-row: 27;
+      grid-row-start: 27;
+}
+/*# sourceMappingURL=overview.css.map */
