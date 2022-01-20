@@ -1,0 +1,15 @@
+@mixin aniHeader($duration) {
+    animation-name: aniHeader;
+    animation-duration: $duration;
+    animation-timing-function: ease;
+    @keyframes aniHeader {
+        from {
+            transform: translateY(8rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

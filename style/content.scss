@@ -138,11 +138,21 @@ nav {
                 transform: translate(-50%, -50%);
                 width: 990px;
                 transform: skreY(10deg);
-                span {
+                .header__ani {
                     font-family: 'Oswald', sans-serif;
                     font-weight: bold;
                     line-height: 1.2;
                     display: inline-block;
+                }
+                @import 'headerAni';
+                .word__1 {
+                    @include aniHeader(1s);
+                }
+                .word__2 {
+                    @include aniHeader(1.3s);
+                }
+                .word__3 {
+                    @include aniHeader(1.6s);
                 }
                 .small__header {
                     font-family: 'Prompt', sans-serif;

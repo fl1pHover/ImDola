@@ -191,11 +191,90 @@ nav .container .nav__content .nav__btn .btn::after {
           transform: skreY(10deg);
 }
 
-.content .content__container .counter__header .content__header span {
+.content .content__container .counter__header .content__header .header__ani {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   line-height: 1.2;
   display: inline-block;
+}
+
+.content .content__container .counter__header .content__header .word__1 {
+  -webkit-animation-name: aniHeader;
+          animation-name: aniHeader;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes aniHeader {
+  from {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes aniHeader {
+  from {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content .content__container .counter__header .content__header .word__2 {
+  -webkit-animation-name: aniHeader;
+          animation-name: aniHeader;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@keyframes aniHeader {
+  from {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content .content__container .counter__header .content__header .word__3 {
+  -webkit-animation-name: aniHeader;
+          animation-name: aniHeader;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@keyframes aniHeader {
+  from {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .content .content__container .counter__header .content__header .small__header {
