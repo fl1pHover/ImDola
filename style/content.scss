@@ -138,12 +138,14 @@ nav {
                 transform: translate(-50%, -50%);
                 width: 990px;
                 transform: skreY(10deg);
+                // Slidenaas orj bga huudasnii Header
                 .header__ani {
                     font-family: 'Oswald', sans-serif;
                     font-weight: bold;
                     line-height: 1.2;
                     display: inline-block;
                 }
+                // headeriin animation
                 @import 'headerAni';
                 .word__1 {
                     @include aniHeader(1s);
@@ -154,6 +156,7 @@ nav {
                 .word__3 {
                     @include aniHeader(1.6s);
                 }
+                // Headeriin door bga jijg header
                 .small__header {
                     font-family: 'Prompt', sans-serif;
                     margin-top: 25px;
