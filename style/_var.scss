@@ -16,3 +16,7 @@ $gray: rgba(29,
 $swiper-header: 3rem;
 $about-content: 4rem;
 $big-header:10rem;
+$breakpoints: ( "phone": 360px,
+"tablet" :768px,
+"desktop": 1366px,
+) !default;
