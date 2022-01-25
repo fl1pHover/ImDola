@@ -41,6 +41,7 @@ body {
 #about {
     padding: calc(4rem + 46px) 0 4rem;
     font-family: 'Nunito Sans', sans-serif;
+    -webkit-animation: about 3s ease;
     animation: about 3s ease;
     .about__container {
         max-width: 992px;
@@ -88,6 +89,17 @@ body {
             }
         }
     }
+    @-webkit-keyframes text {
+        from {
+            opacity: 0;
+            transform: translateY(4rem);
+            transition: 2s;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     @keyframes text {
         from {
             opacity: 0;
@@ -103,7 +115,16 @@ body {
         font-weight: 200;
         line-height: 1.2;
         display: inline-block;
+        -webkit-animation: text 0.8s ease;
         animation: text 0.8s ease;
+    }
+    @-webkit-keyframes slide {
+        from {
+            left: -100vw;
+        }
+        to {
+            left: 0;
+        }
     }
     @keyframes slide {
         from {
@@ -111,6 +132,14 @@ body {
         }
         to {
             left: 0;
+        }
+    }
+    @-webkit-keyframes about {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
     @keyframes about {

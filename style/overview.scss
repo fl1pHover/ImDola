@@ -3,6 +3,7 @@
     // grid-column-start: span 7;
     width: 530px;
     height: 370px;
+    -webkit-animation: land 3s ease;
     animation: land 3s ease;
     transition-delay: 2.5s;
     overflow: hidden;
@@ -13,6 +14,7 @@
     // grid-column: span 14;
     width: 370px;
     height: 530px;
+    -webkit-animation: port 3s ease;
     animation: port 3s ease;
     transition-delay: 2s;
     overflow: hidden;
@@ -23,9 +25,19 @@
     // grid-column: span 12;
     width: 450px;
     height: 450px;
+    -webkit-animation: square 3s ease;
     animation: square 3s ease;
     transition-delay: 2s;
     overflow: hidden;
+}
+
+@-webkit-keyframes land {
+    from {
+        height: 290px;
+    }
+    to {
+        height: 370px;
+    }
 }
 
 @keyframes land {
@@ -34,6 +46,15 @@
     }
     to {
         height: 370px;
+    }
+}
+
+@-webkit-keyframes port {
+    from {
+        height: 470px;
+    }
+    to {
+        height: 530px;
     }
 }
 
@@ -46,12 +67,30 @@
     }
 }
 
+@-webkit-keyframes square {
+    from {
+        height: 270px;
+    }
+    to {
+        height: 450px;
+    }
+}
+
 @keyframes square {
     from {
         height: 270px;
     }
     to {
         height: 450px;
+    }
+}
+
+@-webkit-keyframes overviewImg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
     }
 }
 
@@ -86,6 +125,7 @@
                 overflow: hidden;
                 img {
                     transform: scale(1.1);
+                    -webkit-animation: overviewImg 1.5s linear;
                     animation: overviewImg 1.5s linear;
                 }
             }

@@ -9,12 +9,23 @@
     }
     .transition.slide .cover1 {
         background-color: $dark;
+        -webkit-animation: slide 0.5s ease-in forwards;
         animation: slide 0.5s ease-in forwards;
     }
     .transition.slide .cover2 {
         background-color: white;
+        -webkit-animation: slide 0.5s ease-in forwards;
         animation: slide 0.5s ease-in forwards;
+        -webkit-animation-delay: 0.3s;
         animation-delay: 0.3s;
+    }
+    @-webkit-keyframes slide {
+        0% {
+            left: -100vw;
+        }
+        100% {
+            left: 0;
+        }
     }
     @keyframes slide {
         0% {

@@ -5,8 +5,13 @@ body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.5;
     color: #1d1f26;
+    -ms-scroll-chaining: none;
     overscroll-behavior: none;
+    -webkit-animation: trans 0.7s;
     animation: trans 0.7s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     height: 100vh;
     width: 100vw;
@@ -33,12 +38,15 @@ img {
 
 .transition.slide .cover1 {
     background-color: $dark;
+    -webkit-animation: slide 0.5s ease-in forwards;
     animation: slide 0.5s ease-in forwards;
 }
 
 .transition.slide .cover2 {
     background-color: white;
+    -webkit-animation: slide 0.5s ease-in forwards;
     animation: slide 0.5s ease-in forwards;
+    -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
 
@@ -244,6 +252,7 @@ nav {
 // Undsen main swiper
 #main {
     background-color: $white;
+    -webkit-animation: main 2s ease;
     animation: main 2s ease;
     overflow: hidden;
     .swiper__container {
@@ -271,6 +280,7 @@ nav {
                     justify-content: center;
                     align-items: center;
                     .slide__img {
+                        -o-object-fit: contain;
                         object-fit: contain;
                         height: 600px;
                         position: relative;
@@ -284,6 +294,7 @@ nav {
                             display: block;
                             // width: 110%;
                             height: 110%;
+                            -o-object-fit: cover;
                             object-fit: cover;
                             transition: 1s ease;
                             transition-delay: 0.95s;
@@ -291,6 +302,7 @@ nav {
                         video {
                             display: block;
                             height: 110%;
+                            -o-object-fit: cover;
                             object-fit: cover;
                             transform: .1 ease;
                             transition-delay: 0.95s;
@@ -404,15 +416,26 @@ nav {
             stroke-dasharray: 138;
             stroke-dashoffset: 285;
             stroke-width: 1px;
+            -webkit-animation: dash-out .7s ease-in-out forwards;
             animation: dash-out .7s ease-in-out forwards;
             // cubic-bezier(.645, .045, .355, 1)
         }
         .circle:hover {
+            -webkit-animation: dash-in .7s ease-in-out forwards;
             animation: dash-in .7s ease-in-out forwards;
         }
     }
     .swiper-button-prev {
         transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes dash-out {
+    0% {
+        stroke-dasharray: 138;
+    }
+    100% {
+        stroke-dasharray: 268;
     }
 }
 
@@ -422,6 +445,15 @@ nav {
     }
     100% {
         stroke-dasharray: 268;
+    }
+}
+
+@-webkit-keyframes dash-in {
+    0% {
+        stroke-dasharray: 268;
+    }
+    100% {
+        stroke-dasharray: 138;
     }
 }
 
@@ -464,6 +496,15 @@ nav {
 }
 
 // Page transition animation
+@-webkit-keyframes slide {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 @keyframes slide {
     0% {
         left: -100vw;
@@ -474,6 +515,15 @@ nav {
 }
 
 // Main
+@-webkit-keyframes main {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes main {
     from {
         opacity: 0;
