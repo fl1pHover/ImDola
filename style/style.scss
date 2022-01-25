@@ -550,6 +550,9 @@ nav {
 }
 
 @media (max-width: 600px) {
+    nav .container {
+        padding: 15px 25px !important;
+    }
     .swiper__header {
         font-size: 2.3rem;
     }
@@ -563,6 +566,9 @@ nav {
 }
 
 @media (max-width: 480px) {
+    nav .container {
+        padding: 10px 20px !important;
+    }
     .swiper__header {
         font-size: 1.7rem;
     }
