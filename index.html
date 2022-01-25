@@ -239,7 +239,7 @@
         });
     </script>
     <script>
-        var swiper = new Swiper(".text", {
+        var swiperText = new Swiper(".text", {
             spaceBetween: 30,
             centeredSlides: true,
             parallax: true,
@@ -247,6 +247,15 @@
             loop: true,
             initialSlide: 0,
             slidesPerView: 3,
+            breakpoints: {
+                200: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 640px
+                900: {
+                    slidesPerView: 3,
+                }
+            },
 
             allowTouchMove: false,
             // autoplay: {

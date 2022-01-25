@@ -14,16 +14,17 @@ body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
   color: #1d1f26;
+  -ms-scroll-chaining: none;
   overscroll-behavior: none;
   -webkit-animation: trans 0.7s;
-          animation: trans 0.7s;
+  animation: trans 0.7s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -46,15 +47,15 @@ img {
 .transition.slide .cover1 {
   background-color: #1d1f26;
   -webkit-animation: slide 0.5s ease-in forwards;
-          animation: slide 0.5s ease-in forwards;
+  animation: slide 0.5s ease-in forwards;
 }
 
 .transition.slide .cover2 {
   background-color: white;
   -webkit-animation: slide 0.5s ease-in forwards;
-          animation: slide 0.5s ease-in forwards;
+  animation: slide 0.5s ease-in forwards;
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .gray {
@@ -278,7 +279,7 @@ nav .container .nav__content .nav__btn a::after {
 #main {
   background-color: white;
   -webkit-animation: main 2s ease;
-          animation: main 2s ease;
+  animation: main 2s ease;
   overflow: hidden;
 }
 
@@ -330,7 +331,7 @@ nav .container .nav__content .nav__btn a::after {
 
 #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   height: 600px;
   position: relative;
   overflow: hidden;
@@ -350,7 +351,7 @@ nav .container .nav__content .nav__btn a::after {
   display: block;
   height: 110%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transition: 1s ease;
   transition: 1s ease;
   -webkit-transition-delay: 0.95s;
@@ -361,7 +362,7 @@ nav .container .nav__content .nav__btn a::after {
   display: block;
   height: 110%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transform: .1 ease;
           transform: .1 ease;
   -webkit-transition-delay: 0.95s;
@@ -491,13 +492,13 @@ nav .container .nav__content .nav__btn a::after {
   stroke-dashoffset: 285;
   stroke-width: 1px;
   -webkit-animation: dash-out .7s ease-in-out forwards;
-          animation: dash-out .7s ease-in-out forwards;
+  animation: dash-out .7s ease-in-out forwards;
 }
 
 .swiper__buttons .swiper-button-next .circle:hover,
 .swiper__buttons .swiper-button-prev .circle:hover {
   -webkit-animation: dash-in .7s ease-in-out forwards;
-          animation: dash-in .7s ease-in-out forwards;
+  animation: dash-in .7s ease-in-out forwards;
 }
 
 .swiper__buttons .swiper-button-prev {
@@ -623,7 +624,7 @@ nav .container .nav__content .nav__btn a::after {
     font-size: 2.5rem;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 530px !important;
+    height: 530px;
     display: -ms-grid;
     display: grid;
     place-items: center;
@@ -633,13 +634,13 @@ nav .container .nav__content .nav__btn a::after {
 
 @media (max-width: 1280px) {
   nav .container {
-    padding: 30px 30px !important;
+    padding: 30px 30px;
   }
   .swiper__header {
     font-size: 2.3rem;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 450px !important;
+    height: 450px;
   }
 }
 
@@ -648,65 +649,65 @@ nav .container .nav__content .nav__btn a::after {
     font-size: 1.8rem;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 370px !important;
+    height: 370px;
   }
   .swiper.text {
-    width: 120vw !important;
+    width: 120vw;
   }
 }
 
 @media (max-width: 900px) {
   nav .container {
-    padding: 20px 30px !important;
+    padding: 20px 30px;
   }
   .swiper__header {
     font-size: 2.5rem;
   }
   .swiper.text {
-    width: 160vw !important;
+    width: 160vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 600px !important;
+    height: 600px;
   }
 }
 
 @media (max-width: 800px) {
   .swiper.text {
-    width: 200vw !important;
+    width: 200vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 550px !important;
+    height: 550px;
   }
 }
 
 @media (max-width: 600px) {
   nav .container {
-    padding: 15px 25px !important;
+    padding: 15px 25px;
   }
   .swiper__header {
     font-size: 2.3rem;
   }
   .swiper.text {
-    width: 200vw !important;
+    width: 200vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 450px !important;
+    height: 450px;
     max-width: 550px;
   }
 }
 
 @media (max-width: 480px) {
   nav .container {
-    padding: 10px 20px !important;
+    padding: 10px 20px;
   }
   .swiper__header {
     font-size: 1.7rem;
   }
   .swiper.text {
-    width: 250vw !important;
+    width: 250vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 400px !important;
+    height: 400px;
     max-width: 330px;
   }
 }
@@ -716,20 +717,20 @@ nav .container .nav__content .nav__btn a::after {
     font-size: 1.7rem;
   }
   .swiper.text {
-    width: 250vw !important;
+    width: 250vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 400px !important;
+    height: 400px;
     max-width: 330px;
   }
 }
 
 @media (max-width: 360px) {
   .swiper.text {
-    width: 250vw !important;
+    width: 250vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 350px !important;
+    height: 350px;
     max-width: 300px;
   }
 }

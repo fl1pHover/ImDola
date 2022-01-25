@@ -15,7 +15,7 @@ body {
     user-select: none;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -544,7 +544,7 @@ nav {
         font-size: 2.5rem;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 530px !important;
+        height: 530px;
         display: grid;
         place-items: center;
         position: relative;
@@ -553,13 +553,13 @@ nav {
 
 @media (max-width: 1280px) {
     nav .container {
-        padding: 30px 30px !important;
+        padding: 30px 30px;
     }
     .swiper__header {
         font-size: 2.3rem;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 450px !important;
+        height: 450px;
     }
 }
 
@@ -568,65 +568,65 @@ nav {
         font-size: 1.8rem;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 370px !important;
+        height: 370px;
     }
     .swiper.text {
-        width: 120vw !important;
+        width: 120vw;
     }
 }
 
 @media (max-width: 900px) {
     nav .container {
-        padding: 20px 30px !important;
+        padding: 20px 30px;
     }
     .swiper__header {
         font-size: 2.5rem;
     }
     .swiper.text {
-        width: 160vw !important;
+        width: 160vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 600px !important;
+        height: 600px;
     }
 }
 
 @media (max-width: 800px) {
     .swiper.text {
-        width: 200vw !important;
+        width: 200vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 550px !important;
+        height: 550px;
     }
 }
 
 @media (max-width: 600px) {
     nav .container {
-        padding: 15px 25px !important;
+        padding: 15px 25px;
     }
     .swiper__header {
         font-size: 2.3rem;
     }
     .swiper.text {
-        width: 200vw !important;
+        width: 200vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 450px !important;
+        height: 450px;
         max-width: 550px;
     }
 }
 
 @media (max-width: 480px) {
     nav .container {
-        padding: 10px 20px !important;
+        padding: 10px 20px;
     }
     .swiper__header {
         font-size: 1.7rem;
     }
     .swiper.text {
-        width: 250vw !important;
+        width: 250vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 400px !important;
+        height: 400px;
         max-width: 330px;
     }
 }
@@ -636,20 +636,20 @@ nav {
         font-size: 1.7rem;
     }
     .swiper.text {
-        width: 250vw !important;
+        width: 250vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 400px !important;
+        height: 400px;
         max-width: 330px;
     }
 }
 
 @media (max-width: 360px) {
     .swiper.text {
-        width: 250vw !important;
+        width: 250vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 350px !important;
+        height: 350px;
         max-width: 300px;
     }
 }

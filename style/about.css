@@ -56,7 +56,7 @@ body {
   padding: calc(4rem + 46px) 0 4rem;
   font-family: 'Nunito Sans', sans-serif;
   -webkit-animation: about 3s ease;
-          animation: about 3s ease;
+  animation: about 3s ease;
 }
 
 #about .about__container {
@@ -154,7 +154,7 @@ body {
   line-height: 1.2;
   display: inline-block;
   -webkit-animation: text 0.8s ease;
-          animation: text 0.8s ease;
+  animation: text 0.8s ease;
 }
 
 @-webkit-keyframes slide {

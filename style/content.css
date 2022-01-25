@@ -81,7 +81,7 @@ nav .container .nav__content .nav__btn .hidden__overview {
           align-items: center;
   margin-right: 15px;
   -webkit-animation: overview 2s cubic-bezier(0.77, 0, 0.175, 1);
-          animation: overview 2s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: overview 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 nav .container .nav__content .nav__btn .hidden__overview img {
@@ -111,7 +111,7 @@ nav .container .nav__content .nav__btn .hidden__overview .overview:before {
 nav .container .nav__content .nav__btn .btn {
   color: gray;
   -webkit-animation: btn 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-          animation: btn 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: btn 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 nav .container .nav__content .nav__btn .btn:hover {
@@ -216,11 +216,11 @@ nav .container .nav__content .nav__btn a::after {
 
 .content .content__container .counter__header .content__header .word__1 {
   -webkit-animation-name: aniHeader;
-          animation-name: aniHeader;
+  animation-name: aniHeader;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 @-webkit-keyframes aniHeader {
@@ -251,11 +251,24 @@ nav .container .nav__content .nav__btn a::after {
 
 .content .content__container .counter__header .content__header .word__2 {
   -webkit-animation-name: aniHeader;
-          animation-name: aniHeader;
+  animation-name: aniHeader;
   -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
+  animation-duration: 1.3s;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes aniHeader {
+  from {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes aniHeader {
@@ -273,11 +286,24 @@ nav .container .nav__content .nav__btn a::after {
 
 .content .content__container .counter__header .content__header .word__3 {
   -webkit-animation-name: aniHeader;
-          animation-name: aniHeader;
+  animation-name: aniHeader;
   -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
+  animation-duration: 1.6s;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes aniHeader {
+  from {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes aniHeader {

@@ -2,7 +2,7 @@
   width: 530px;
   height: 370px;
   -webkit-animation: land 3s ease;
-          animation: land 3s ease;
+  animation: land 3s ease;
   -webkit-transition-delay: 2.5s;
           transition-delay: 2.5s;
   overflow: hidden;
@@ -12,7 +12,7 @@
   width: 370px;
   height: 530px;
   -webkit-animation: port 3s ease;
-          animation: port 3s ease;
+  animation: port 3s ease;
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
   overflow: hidden;
@@ -22,7 +22,7 @@
   width: 450px;
   height: 450px;
   -webkit-animation: square 3s ease;
-          animation: square 3s ease;
+  animation: square 3s ease;
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
   overflow: hidden;
@@ -142,7 +142,7 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-animation: overviewImg 1.5s linear;
-          animation: overviewImg 1.5s linear;
+  animation: overviewImg 1.5s linear;
 }
 
 #overview .container .grid__overview .grid__img1 {
