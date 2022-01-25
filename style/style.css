@@ -544,7 +544,7 @@ nav .container .nav__content .nav__btn a::after {
 
 .swiper.text {
   position: absolute;
-  width: 110vw !important;
+  width: 100vw !important;
 }
 
 .swiper-slide-active .slide__img {
