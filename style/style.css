@@ -279,6 +279,7 @@ nav .container .nav__content .nav__btn a::after {
   background-color: white;
   -webkit-animation: main 2s ease;
           animation: main 2s ease;
+  overflow: hidden;
 }
 
 #main .swiper__container {
@@ -553,6 +554,16 @@ nav .container .nav__content .nav__btn a::after {
 .swiper-slide-active .slide__img img {
   -webkit-transform: scale(0.92);
           transform: scale(0.92);
+}
+
+.swiper-slide-active .slide__content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-slide-active .swiper__content:hover ~ .slide__img {

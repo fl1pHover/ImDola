@@ -247,6 +247,7 @@
             loop: true,
             initialSlide: 0,
             slidesPerView: 3,
+
             allowTouchMove: false,
             // autoplay: {
             //     delay: 4500,
@@ -359,7 +360,16 @@
             }, 900);
         });
     </script>
+    <script>
+        const div = document.querySelector('div')
+        div.addEventListener('dragstart', (e) => {
+            e.preventDefault()
+        })
 
+        div.addEventListener('drop', (e) => {
+            e.preventDefault()
+        })
+    </script>
 </body>
 
 </html>

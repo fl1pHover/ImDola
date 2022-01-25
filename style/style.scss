@@ -245,6 +245,7 @@ nav {
 #main {
     background-color: $white;
     animation: main 2s ease;
+    overflow: hidden;
     .swiper__container {
         height: 100vh;
         display: grid;
@@ -447,6 +448,11 @@ nav {
         img {
             transform: scale(0.92);
         }
+    }
+    .slide__content {
+        width: 80%;
+        display: flex;
+        justify-content: center;
     }
     .swiper__content:hover~.slide__img {
         display: none;
