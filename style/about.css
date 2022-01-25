@@ -55,8 +55,6 @@ body {
 #about {
   padding: calc(4rem + 46px) 0 4rem;
   font-family: 'Nunito Sans', sans-serif;
-  -webkit-animation: about 3s ease;
-  animation: about 3s ease;
 }
 
 #about .about__container {
@@ -69,7 +67,7 @@ body {
 #about .about__container .about__content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 4rem;
+  font-size: 40px;
 }
 
 #about .about__container .about__content .swiper__header {
@@ -87,7 +85,7 @@ body {
 }
 
 #about .about__container .about__content .about__text span {
-  display: inline-block;
+  display: inline;
 }
 
 #about .about__footer .about__container {
@@ -175,21 +173,83 @@ body {
   }
 }
 
-@-webkit-keyframes about {
-  from {
-    opacity: 0;
+@media (max-width: 360px) {
+  #about {
+    height: 100vh;
+    padding: calc(2rem + 46px) 0 4rem;
   }
-  to {
-    opacity: 1;
+  #about .about__container {
+    padding: 2.5rem 2rem;
+  }
+  #about .about__container .about__content .about__text {
+    line-height: 0;
+  }
+  #about .about__container .about__content .about__text span {
+    line-height: 1.2;
+    font-size: 20px !important;
+    display: inline;
+  }
+  #about .about__container .about__content .about__text .about1 {
+    -webkit-animation-name: aboutText;
+            animation-name: aboutText;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
 }
 
-@keyframes about {
-  from {
-    opacity: 0;
+@media (min-width: 360px) and (max-width: 480px) {
+  #about {
+    padding: calc(2rem + 46px) 0 4rem;
   }
-  to {
-    opacity: 1;
+  #about .about__container .about__content .about__text {
+    line-height: 0;
+  }
+  #about .about__container .about__content .about__text span {
+    line-height: 1.2;
+    font-size: 21px !important;
+    display: inline;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  #about {
+    padding: calc(2rem + 46px) 0 4rem;
+  }
+  #about .about__container .about__content .about__text {
+    line-height: 0;
+  }
+  #about .about__container .about__content .about__text span {
+    line-height: 1.2;
+    font-size: 24px !important;
+    display: inline;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  #about {
+    padding: calc(2rem + 46px) 0 4rem;
+  }
+  #about .about__container .about__content .about__text {
+    line-height: 0;
+  }
+  #about .about__container .about__content .about__text span {
+    line-height: 1.2;
+    font-size: 28px !important;
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  #about {
+    padding: calc(2rem + 46px) 0 4rem;
+  }
+  #about .about__container .about__content .about__text {
+    line-height: 0;
+  }
+  #about .about__container .about__content .about__text span {
+    line-height: 1.4;
+    font-size: 32px !important;
+    display: inline;
   }
 }
 /*# sourceMappingURL=about.css.map */
