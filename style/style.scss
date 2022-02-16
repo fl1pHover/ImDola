@@ -546,7 +546,8 @@ nav {
         font-size: 2.5rem;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 530px;
+        // height: 530px;
+        width: 530px;
         display: grid;
         place-items: center;
         position: relative;
@@ -561,7 +562,8 @@ nav {
         font-size: 2.3rem;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 450px;
+        // height: 450px;
+        width: 450px;
     }
 }
 
@@ -570,7 +572,8 @@ nav {
         font-size: 1.8rem;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 370px;
+        // height: 370px;
+        width: 370px;
     }
     .swiper.text {
         width: 120vw;
@@ -588,7 +591,8 @@ nav {
         width: 160vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 600px;
+        // height: 600px;
+        width: 600px;
     }
 }
 
@@ -597,7 +601,8 @@ nav {
         width: 200vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 550px;
+        // height: 550px;
+        width: 550px;
     }
 }
 
@@ -612,7 +617,7 @@ nav {
         width: 200vw;
     }
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 450px;
+        // height: 450px;
         max-width: 550px;
     }
 }
