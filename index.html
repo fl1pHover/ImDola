@@ -61,7 +61,7 @@
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/instagramSlide.jpg" alt="Instagram Slide IMG" style="border-radius: 28%">
+                            <img src="/img/Slide Img/instagramSlide.jpg" alt="Instagram Slide IMG">
                             <div class="overlay"></div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="swiper-slide">
                         <div class="slide__content">
                             <h1 class="headers " data-swiper-parallax-duration="2500">
-                                <a href="content.html" class="swiper__header click1">
+                                <a href="content.html" class="swiper__header click2">
                                     Сургалтын <br>
                                     <span class="left underline">мэдээлэл</span> </a>
                                 <a href="content.html" class="swiper__header transparent__header">01</a>
@@ -93,12 +93,12 @@
                     <div class="swiper-slide">
                         <div class="slide__content">
                             <h1 class="headers " data-swiper-parallax-duration="2500">
-                                <a href="youtube.html" class="swiper__header click2">
+                                <a href="youtube.html" class="swiper__header click1">
                                     <!-- Youtube -->
                                     <br>
                                     <span class="left underline">Youtube</span>
                                 </a>
-                                <a href="content.html" class="swiper__header transparent__header">02</a>
+                                <a href="youtube.html" class="swiper__header transparent__header">02</a>
                             </h1>
                         </div>
                     </div>
@@ -226,10 +226,6 @@
         const click2 = document.querySelector(".click2");
         const click3 = document.querySelector(".click3");
         const click4 = document.querySelector(".click4");
-        const click5 = document.querySelector(".click5");
-        const click6 = document.querySelector(".click6");
-        const click7 = document.querySelector(".click7");
-        const click8 = document.querySelector(".click8");
 
         // Animation class
         const transition = document.querySelector(".transition");
@@ -276,42 +272,6 @@
             transition.classList.add("slide");
             setTimeout(() => {
                 window.location = click4.href;
-            }, 900);
-        });
-
-        // Slide 5 animation
-        click5.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click5.href;
-            }, 900);
-        });
-
-        // Slide 6 animation
-        click6.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click6.href;
-            }, 900);
-        });
-
-        // Slide 7 animation
-        click7.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click7.href;
-            }, 900);
-        });
-
-        // Slide 8 animation
-        click8.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click8.href;
             }, 900);
         });
     </script>

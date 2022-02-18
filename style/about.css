@@ -191,9 +191,9 @@ body {
   }
   #about .about__container .about__content .about__text .about1 {
     -webkit-animation-name: aboutText;
-            animation-name: aboutText;
+    animation-name: aboutText;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
   }
 }
 

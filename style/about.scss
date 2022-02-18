@@ -137,6 +137,7 @@ body {
 }
 
 @mixin aboutDuration($duration) {
+    -webkit-animation-duration: $duration;
     animation-duration: $duration;
 }
 
@@ -155,6 +156,7 @@ body {
                 display: inline;
             }
             .about1 {
+                -webkit-animation-name: aboutText;
                 animation-name: aboutText;
                 @include aboutDuration(2s);
             }
