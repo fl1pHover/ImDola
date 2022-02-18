@@ -626,6 +626,7 @@ nav .container .nav__content .nav__btn a::after {
     font-size: 2.5rem;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    height: 530px;
     width: 530px;
     display: -ms-grid;
     display: grid;
@@ -642,6 +643,7 @@ nav .container .nav__content .nav__btn a::after {
     font-size: 2.3rem;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    height: 450px;
     width: 450px;
   }
 }
@@ -652,6 +654,7 @@ nav .container .nav__content .nav__btn a::after {
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
     width: 370px;
+    max-height: 370px;
   }
   .swiper.text {
     width: 120vw;
@@ -669,6 +672,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 160vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    height: 600px;
     width: 600px;
   }
 }
@@ -678,6 +682,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 200vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    height: 550px;
     width: 550px;
   }
 }
@@ -693,6 +698,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 200vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    height: 450px;
     max-width: 550px;
   }
 }
