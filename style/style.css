@@ -741,4 +741,8 @@ nav .container .nav__content .nav__btn a::after {
     max-width: 300px;
   }
 }
+
+.slide__img img {
+  border-radius: 28%;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+.content__p {
+  display: inline-block;
+  width: 100%;
+}
+
+.content__p a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.content .gallery__container .content__gallery .tumbnail {
+  margin: 4rem 2rem;
+}
+
+.content .gallery__container .content__gallery .tumbnail .content__img {
+  padding: 0;
+}
+/*# sourceMappingURL=youtube.css.map */

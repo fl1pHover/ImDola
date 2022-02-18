@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Im Dola</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/content.css">
+    <link rel="stylesheet" href="./style/youtube.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="transition">
+        <div class="cover cover1"></div>
+        <div class="cover cover2"></div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="nav__content">
+                <a href="index.html" class="nav__pro links">
+                    <span class="pro__img ">
+                              <img src="./img/dola4.jpg" class="pro" alt="pro">
+                         </span>
+                    <span class="full__name">
+                              <p class="name">Im </p>
+                              <p class="name gray">Dola</p>
+                         </span>
+                </a>
+                <div class="nav__btn">
+                    <a href="overview.html" class="hidden__overview overview">
+                        <img src="./img/whiteArrow.svg" alt="">
+                        <span class="overview btn left"> overview
+                              </span>
+                    </a>
+                    <a href="about.html" class="btn left underline link">about
+                         </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="content__container">
+            <div class="counter__header">
+                <span class="transparent__header">0</span><span class="count transparent__header">1</span>
+                <div class="content__header" style="width: 950px">
+                    <span class="header__ani word__1">
+                              Instagram
+                         </span>
+                    <!-- <span class="header__ani word__2">
+                              
+                         </span> -->
+                    <!-- <span class="header__ani word__3">
+                              channel
+                         </span> -->
+
+                    <span class="small__header">Youtube: Im Dola
+                         </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="gallery__container">
+            <div class="content__gallery">
+                <div class="content__buy">
+                    <div class="content__logo">
+                        <a href="https://www.youtube.com/c/ImDola0" target="blank">
+                            <img src="./img/youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+        const link = document.querySelector(" .links");
+        const transition = document.querySelector(" .transition ");
+        link.addEventListener(" click ", (e) => {
+            e.preventDefault();
+            transition.classList.add(" slide ");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+    </script> -->
+    <script>
+        var counter = document.querySelector(".count");
+        let count = 0;
+
+        setInterval(() => {
+            if (count < 3) {
+                count++;
+                counter.innerText = count;
+            }
+        }, 100)
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+
+        });
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector(".full__name");
+            header.classList.toggle("hide", window.scrollY > 50)
+        })
+    </script>
+
+    <script>
+        // About animation
+        const nav__pro = document.querySelector(".nav__pro");
+        const link = document.querySelector(".link");
+        const overview = document.querySelector(".overview");
+        // Animation class
+        const transition = document.querySelector(".transition");
+
+        // About animation
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+        nav__pro.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = nav__pro.href;
+            }, 900);
+        });
+        overview.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = overview.href;
+            }, 900);
+        });
+
+        // Slide 1 animation
+    </script>
+    <script src="/parallax.min.js"></script>
+</body>
+
+</html>

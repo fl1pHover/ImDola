@@ -1,0 +1,16 @@
+.content__p {
+    display: inline-block;
+    width: 100%;
+    a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
+
+.content .gallery__container .content__gallery .tumbnail {
+    margin: 4rem 2rem;
+    .content__img {
+        padding: 0;
+    }
+}
