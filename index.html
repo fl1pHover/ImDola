@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="transition">
+    <div class="transition" id="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
@@ -228,8 +228,7 @@
         const click4 = document.querySelector(".click4");
 
         // Animation class
-        const transition = document.querySelector(".transition");
-
+        const transition = document.querySelector("#transition");
         // About animation
         link.addEventListener("click", (e) => {
             e.preventDefault();
