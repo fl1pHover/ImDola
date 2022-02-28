@@ -25,7 +25,7 @@
     <nav>
         <div class="container">
             <div class="nav__content">
-                <a href="index.html" class="nav__pro links">
+                <a class="nav__pro links" onclick="clicker('index.html')">
                     <span class="pro__img ">
                         <img src="./img/dola4.jpg" class="pro" alt="pro">
                     </span>
@@ -34,11 +34,6 @@
                         <p class="name gray">Dola</p>
                     </span>
                 </a>
-                <div class="nav__btn">
-
-                    <a href="about.html" class="btn left underline">about
-                    </a>
-                </div>
             </div>
         </div>
     </nav>
@@ -64,7 +59,6 @@
                     </span>
                     <span data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000">холбоотойгоор “Хэрхэн
                         чанартай видео контент бүтээх вэ” сургалтыг гаргасан.
-
                     </span>
 
                 </div>
@@ -80,37 +74,27 @@
         <div class="about__footer">
             <div class="about__container">
                 <div class="about__icon">
-                    <a href="https://www.instagram.com/ddddola/"> <i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/ddddola"> <i class="fab fa-facebook"></i></a>
-                    <a href="https://www.youtube.com/c/ImDola0"> <i class="fab fa-youtube"></i></a>
-
+                    <a href="https://www.instagram.com/ddddola/" target="blank"> <i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ddddola" target="blank"> <i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/c/ImDola0" target="blank"> <i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="about__mail">
-                    <a href="#" class="btn left underline">dola@mail
+                    <a class="btn left underline" onclick="clicker('email.html')">dola@mail
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-        const links = document.querySelector(".links");
-        const transition = document.querySelector(".transition");
-        links.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = links.href;
-            }, 900);
-        });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: 10,
-
         });
     </script>
+
+    <!-- Page link and transition -->
+    <script src="/slide.js"></script>
 </body>
 
 </html>

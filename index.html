@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="transition" id="transition">
+    <div class="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
@@ -22,7 +22,9 @@
         <div class="container">
 
             <div class="nav__content">
-                <a href="index.html" class="nav__pro links">
+
+                <!-- Navbar Profile link -->
+                <a href="#" class="nav__pro links">
                     <span class="pro__img ">
                         <img src="./img/dola4.jpg" class="pro" alt="pro">
                     </span>
@@ -31,23 +33,26 @@
                         <p class="name gray">Dola</p>
                     </span>
                 </a>
+                <!-- Navbar  about link -->
                 <div class="nav__btn">
-
-                    <a href="about.html" class="btn left underline link">about
+                    <a class="btn left underline link" onclick="clicker('about.html')">about
                     </a>
                 </div>
             </div>
         </div>
     </nav>
+
+
     <section id="main" data-aos="fade-up">
         <div class="swiper__container">
             <div class="swiper">
                 <!-- Additional required wrapper -->
+                <!-- Swiper only IMG -->
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/surgaltSlide.jpg" alt="Course Slide IMG">
+                            <img src="/img/Slide Img/surgaltSlide.jpg" alt="Course Slide IMG" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
@@ -60,14 +65,14 @@
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="slide__img">
+                        <div class="slide__img zoom">
                             <img src="/img/Slide Img/instagramSlide.jpg" alt="Instagram Slide IMG">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <div class="slide__img">
+                        <div class="slide__img zoom">
                             <img src="/img/Slide Img/subscriptionSlide.jpg" alt="img3">
                             <div class="overlay"></div>
                         </div>
@@ -77,15 +82,17 @@
             </div>
             <div class="swiper text">
                 <!-- Additional required wrapper -->
+                <!-- Swiper only slide Title -->
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
                         <div class="slide__content">
                             <h1 class="headers " data-swiper-parallax-duration="2500">
-                                <a href="content.html" class="swiper__header click2">
+                                <a class="swiper__header" onclick="clicker('content.html')">
                                     Сургалтын <br>
                                     <span class="left underline">мэдээлэл</span> </a>
-                                <a href="content.html" class="swiper__header transparent__header">01</a>
+                                <a href="content.html" class="swiper__header transparent__header">01
+                                </a>
                             </h1>
                         </div>
                     </div>
@@ -93,7 +100,7 @@
                     <div class="swiper-slide">
                         <div class="slide__content">
                             <h1 class="headers " data-swiper-parallax-duration="2500">
-                                <a href="youtube.html" class="swiper__header click1">
+                                <a class="swiper__header" onclick="clicker('youtube.html')">
                                     <!-- Youtube -->
                                     <br>
                                     <span class="left underline">Youtube</span>
@@ -106,7 +113,7 @@
                     <div class="swiper-slide">
                         <div class="slide__content click2">
                             <h1 class="headers" data-swiper-parallax-duration="2500">
-                                <a href="instagram.html" class="swiper__header click3">
+                                <a class="swiper__header" onclick="clicker('instagram.html')">
                                     <!-- Insta -->
                                     <br>
                                     <span class="left underline">Instagram</span>
@@ -119,7 +126,7 @@
                     <div class="swiper-slide">
                         <div class="slide__content">
                             <h1 class="headers" data-swiper-parallax-duration="2500">
-                                <a href="email.html" class="swiper__header click4">
+                                <a class="swiper__header" onclick="clicker('email.html')">
                                     <!-- Email  -->
                                     <br>
                                     <span class="left underline">Email</span>
@@ -128,10 +135,12 @@
                             </h1>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <!-- Swiper controller -->
             <div class="swiper__buttons">
+                <!-- Next button -->
                 <div class="swiper-button-next">
                     <div class="circle">
                         <svg class="m-slider__button-shape" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +149,9 @@
                         </svg>
                     </div>
                 </div>
+                <!-- Progressbar pagination -->
                 <div class="swiper-pagination"></div>
+                <!-- Prev button -->
                 <div class="swiper-button-prev">
                     <div class="circle">
                         <svg class="m-slider__button-shape" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -152,20 +163,24 @@
             </div>
         </div>
     </section>
-    <div class="transition-wipe overlap"></div>
+
+    <!-- Swiper CDN -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Initialize Swiper-->
     <script>
         var swiper = new Swiper(".swiper", {
             spaceBetween: 30,
             centeredSlides: true,
             parallax: true,
-            speed: 1500,
+            speed: 1250,
             delay: 500,
             loop: true,
-            initialSlide: 0,
+            // loopslides: 4,
+
             allowTouchMove: false,
+            // ActiveXObject:0,
+            // activeIndex: 0,
             // autoplay: {
             //     delay: 4500,
             //     disableOnInteraction: false,
@@ -180,16 +195,19 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
-    <script>
+        console.log(swiper[0].el.childNodes[5].children[0]);
+
         var swiperText = new Swiper(".text", {
             spaceBetween: 30,
             centeredSlides: true,
             parallax: true,
-            speed: 1500,
+            speed: 1250,
             loop: true,
-            initialSlide: 0,
+            // loopslides: 4,
+
+            // initialSlide: 0,
             slidesPerView: 3,
+            delayBetweenSlides: 700,
             breakpoints: {
                 200: {
                     slidesPerView: 1,
@@ -219,71 +237,10 @@
             },
         });
     </script>
-    <script>
-        // Animation click links
-        const link = document.querySelector(".link");
-        const click1 = document.querySelector(".click1");
-        const click2 = document.querySelector(".click2");
-        const click3 = document.querySelector(".click3");
-        const click4 = document.querySelector(".click4");
 
-        // Animation class
-        const transition = document.querySelector("#transition");
-        // About animation
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
+    <!-- Page link and transition -->
+    <script src="slide.js"></script>
 
-        // Slide 1 animation
-        click1.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click1.href;
-            }, 900);
-        });
-
-        // Slide 2 animation
-        click2.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click2.href;
-            }, 900);
-        });
-
-        // Slide 3 animation
-        click3.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click3.href;
-            }, 900);
-        });
-
-        // Slide 4 animation
-        click4.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = click4.href;
-            }, 900);
-        });
-    </script>
-    <script>
-        const div = document.querySelector('div')
-        div.addEventListener('dragstart', (e) => {
-            e.preventDefault()
-        })
-
-        div.addEventListener('drop', (e) => {
-            e.preventDefault()
-        })
-    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Im Dola</title>
+    <title>Course - Im Dola</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
@@ -25,7 +25,7 @@
     <nav>
         <div class="container">
             <div class="nav__content">
-                <a href="index.html" class="nav__pro links">
+                <a class="nav__pro links" onclick="clicker('index.html')">
                     <span class="pro__img ">
                         <img src="./img/dola4.jpg" class="pro" alt="pro">
                     </span>
@@ -35,12 +35,12 @@
                     </span>
                 </a>
                 <div class="nav__btn">
-                    <a href="overview.html" class="hidden__overview overview">
+                    <a class="hidden__overview overview" onclick="clicker('overview.html')">
                         <img src="./img/whiteArrow.svg" alt="">
                         <span class="overview btn left"> overview
                         </span>
                     </a>
-                    <a href="about.html" class="btn left underline link">about
+                    <a class="btn left underline link" onclick="clicker('about.html')">about
                     </a>
                 </div>
             </div>
@@ -156,15 +156,15 @@
                 </ol>
 
                 <div class="content__buy">
-                    <p class="content__p bold ">
+                    <p class="content__p bold">
                         Сургалт худалдаж авах
                     </p>
                     <div class="content__logo">
                         <a href="https://app.tomyo.mn/skills/courses/124" target="blank">
-                            <img src="./img/tomyoLogo.png" alt="">
+                            <img src="img/logos/tomyoLogo.png" alt="">
                         </a>
                         <a href=" https://melearn.mn/course/makeingvlog" target=" blank">
-                            <img src=" ./img/melearnwhiteLogo.png" alt="">
+                            <img src="/img/logos/melearnwhiteLogo.png" alt="">
                         </a>
 
                     </div>
@@ -174,17 +174,7 @@
         </div>
     </section>
 
-    <!-- <script>
-        const link = document.querySelector(" .links");
-        const transition = document.querySelector(" .transition ");
-        link.addEventListener(" click ", (e) => {
-            e.preventDefault();
-            transition.classList.add(" slide ");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
-    </script> -->
+    <!-- Counter background -->
     <script>
         var counter = document.querySelector(".count");
         let count = 5;
@@ -196,55 +186,21 @@
             }
         }, 100)
     </script>
+
+    <!--AOS CDN and property -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: 200,
             duration: 1000,
-
         });
     </script>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-            var header = document.querySelector(".full__name");
-            header.classList.toggle("hide", window.scrollY > 50)
-        })
-    </script>
 
-    <script>
-        // About animation
-        const nav__pro = document.querySelector(".nav__pro");
-        const link = document.querySelector(".link");
-        const overview = document.querySelector(".overview");
-        // Animation class
-        const transition = document.querySelector(".transition");
+    <!-- Scroll hide name -->
+    <script src="hide.js"></script>
 
-        // About animation
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
-        nav__pro.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = nav__pro.href;
-            }, 900);
-        });
-        overview.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = overview.href;
-            }, 900);
-        });
-
-        // Slide 1 animation
-    </script>
-    <!-- <script src="/slide.js"></script> -->
+    <!-- Page link and transition -->
+    <script src="slide.js"></script>
 
 </body>
 

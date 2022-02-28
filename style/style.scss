@@ -59,6 +59,7 @@ img {
     }
 }
 
+// Ursda under lline
 .left::after {
     transform: scaleX(0);
     transform-origin: right;
@@ -270,7 +271,7 @@ nav {
                 padding: 50px 0;
                 position: relative;
                 transition-delay: 0.3s;
-                transition-timing-function: ease;
+                transition-timing-function: cubic-bezier(.645, .045, .355, 1);
                 .swiper-slide {
                     width: 100vw;
                     // height: 705px;
@@ -329,9 +330,12 @@ nav {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         text-align: left;
+                        height: 100px;
                         .headers {
                             stroke: white;
                             width: auto;
+                            cursor: pointer;
+                            position: relative;
                             span {
                                 &::after {
                                     content: '';
@@ -537,7 +541,7 @@ nav {
 
 @media only screen and (max-width: 1600px) {
     .swiper__header {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -545,14 +549,14 @@ nav {
     .swiper__header {
         font-size: 2.5rem;
     }
-    #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-        height: 530px;
-        // Width nemsen
-        width: 530px;
-        display: grid;
-        place-items: center;
-        position: relative;
-    }
+    // #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    //     height: 530px;
+    //     // Width nemsen
+    //     width: 530px;
+    //     display: grid;
+    //     place-items: center;
+    //     position: relative;
+    // }
 }
 
 @media (max-width: 1280px) {
@@ -664,5 +668,19 @@ nav {
     #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
         height: 350px;
         max-width: 300px;
+    }
+}
+
+// .swiper-pagination-progressbar-fill {
+//     transform: translate3d(0px, 0px, 0px) scaleX(0.25) scaleY(1) !important;
+//     transition-duration: 1250ms !important;
+// }
+.swiper-slide-active {
+    .slide__img.zoom {
+        overflow: hidden;
+        position: absolute;
+        img {
+            transform: scale(1);
+        }
     }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Im Dola</title>
+    <title>Instagram - Im Dola</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
@@ -26,23 +26,23 @@
     <nav>
         <div class="container">
             <div class="nav__content">
-                <a href="index.html" class="nav__pro links">
+                <a class="nav__pro links" onclick="clicker('index.html')">
                     <span class="pro__img ">
-                              <img src="./img/dola4.jpg" class="pro" alt="pro">
-                         </span>
+                        <img src="./img/dola4.jpg" class="pro" alt="pro">
+                    </span>
                     <span class="full__name">
-                              <p class="name">Im </p>
-                              <p class="name gray">Dola</p>
-                         </span>
+                        <p class="name">Im </p>
+                        <p class="name gray">Dola</p>
+                    </span>
                 </a>
                 <div class="nav__btn">
-                    <a href="overview.html" class="hidden__overview overview">
+                    <a class="hidden__overview overview" onclick="clicker('overview.html')">
                         <img src="./img/whiteArrow.svg" alt="">
                         <span class="overview btn left"> overview
-                              </span>
+                        </span>
                     </a>
-                    <a href="about.html" class="btn left underline link">about
-                         </a>
+                    <a class="btn left underline link" onclick="clicker('about.html')">about
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,8 +53,8 @@
                 <span class="transparent__header">0</span><span class="count transparent__header">1</span>
                 <div class="content__header" style="width: 950px">
                     <span class="header__ani word__1">
-                              Instagram
-                         </span>
+                        Instagram
+                    </span>
                     <!-- <span class="header__ani word__2">
                               
                          </span> -->
@@ -63,7 +63,7 @@
                          </span> -->
 
                     <span class="small__header">Youtube: Im Dola
-                         </span>
+                    </span>
                 </div>
 
             </div>
@@ -82,17 +82,7 @@
         </div>
     </section>
 
-    <!-- <script>
-        const link = document.querySelector(" .links");
-        const transition = document.querySelector(" .transition ");
-        link.addEventListener(" click ", (e) => {
-            e.preventDefault();
-            transition.classList.add(" slide ");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
-    </script> -->
+    <!-- Counter -->
     <script>
         var counter = document.querySelector(".count");
         let count = 0;
@@ -104,6 +94,8 @@
             }
         }, 100)
     </script>
+
+    <!-- AOS CDN & property-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -112,47 +104,15 @@
 
         });
     </script>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-            var header = document.querySelector(".full__name");
-            header.classList.toggle("hide", window.scrollY > 50)
-        })
-    </script>
 
-    <script>
-        // About animation
-        const nav__pro = document.querySelector(".nav__pro");
-        const link = document.querySelector(".link");
-        const overview = document.querySelector(".overview");
-        // Animation class
-        const transition = document.querySelector(".transition");
+    <!-- Scroll hide name -->
+    <script src="hide.js"></script>
 
-        // About animation
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
-        nav__pro.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = nav__pro.href;
-            }, 900);
-        });
-        overview.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = overview.href;
-            }, 900);
-        });
 
-        // Slide 1 animation
-    </script>
-    <script src="/parallax.min.js"></script>
+    <!-- Page link and transition -->
+    <script src="slide.js"></script>
+
+
 </body>
 
 </html>
