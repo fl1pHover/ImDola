@@ -331,22 +331,6 @@ nav .container .nav__content .nav__btn a::after {
   position: relative;
 }
 
-.content .gallery__container .content__gallery .content__img {
-  height: calc(100% + 6rem);
-  position: relative;
-  overflow: hidden;
-  font-size: 16px;
-  padding: 4rem 2rem;
-}
-
-.content .gallery__container .content__gallery .content__img img {
-  width: 100%;
-}
-
-.content .gallery__container .content__gallery .content__img .content__p {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .content .gallery__container .content__gallery .content__buy .content__p {
   display: -ms-grid;
   display: grid;
@@ -366,6 +350,22 @@ nav .container .nav__content .nav__btn a::after {
 
 .content .gallery__container .content__gallery .content__buy .content__logo img {
   width: 300px;
+}
+
+.content__img {
+  height: calc(100% + 6rem);
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 4rem 2rem;
+}
+
+.content__img img {
+  width: 100%;
+}
+
+.content__img .content__p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @-webkit-keyframes img {

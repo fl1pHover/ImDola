@@ -1,181 +1,172 @@
-    @import 'var';
-    @import 'transition';
-    @import 'mobile';
-     :root {
-        /*===== Fuente y tipografia =====*/
-        --body-font: 'Roboto', sans-serif;
-        --normal-font-size: 1rem;
-        --small-font-size: .75rem;
-    }
-    
-    $dark: #1d1f26;
-    $input-color: #80868B;
-    $border-color: #DADCE0;
-    #email__input {
+:root {
+    /*===== Fuente y tipografia =====*/
+    --normal-font-size: 1rem;
+    --small-font-size: .75rem;
+}
+
+$dark: #1d1f26;
+$input-color: #80868B;
+$border-color: #DADCE0;
+#email__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    form {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        width: 700px;
+        position: relative;
+        input {
+            width: 100%;
+        }
+    }
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    position: relartive;
+    #email {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    .swiper__header {
+        margin-bottom: 30px;
+    }
+}
+
+.user__input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.form {
+    width: 800px;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    // mid
+    margin: auto;
+    //     Erunhii form divuud
+    &__div {
+        position: relative;
+        height: 48px;
+        margin-bottom: 1.5rem;
+    }
+    //     Text area giin undur 
+    &__area {
+        height: 200px;
+    }
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 700px;
-            position: relative;
-            input {
-                width: 100%;
-            }
+        font-size: var(--normal-font-size);
+        border: 1px solid $border-color;
+        border-radius: .5rem;
+        outline: none;
+        padding: 1rem;
+        background: none;
+        z-index: 1;
+    }
+    &__label {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        padding: 0 .25rem;
+        background-color: #fff;
+        color: $input-color;
+        font-size: var(--normal-font-size);
+        transition: .3s;
+    }
+    //     Form send button
+    &__button {
+        display: block;
+        margin-left: auto;
+        padding: .75rem 2rem;
+        outline: none;
+        border: none;
+        background-color: $dark;
+        color: #fff;
+        font-size: var(--normal-font-size);
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: .3s;
+        // Button whole width
+        width: 100%;
+        &:hover {
+            box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
         }
     }
-    
-    .form__container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-        .swiper__header {
-            margin-bottom: 30px;
-        }
-    }
-    
-    .user__input {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-    }
-    
-    .form {
-        width: 360px;
-        padding: 4rem 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-        //     Erunhii form divuud
-        &__div {
-            position: relative;
-            height: 48px;
-            margin-bottom: 1.5rem;
-        }
-        //     Text area giin undur 
-        &__area {
-            height: 200px;
-        }
-        &__input {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            font-size: var(--normal-font-size);
-            border: 1px solid $border-color;
-            border-radius: .5rem;
-            outline: none;
-            padding: 1rem;
-            background: none;
-            z-index: 1;
-        }
-        &__label {
-            position: absolute;
-            left: 1rem;
-            top: 1rem;
-            padding: 0 .25rem;
-            background-color: #fff;
-            color: $input-color;
-            font-size: var(--normal-font-size);
-            transition: .3s;
-        }
-        //     Form send button
-        &__button {
-            display: block;
-            margin-left: auto;
-            padding: .75rem 2rem;
-            outline: none;
-            border: none;
-            background-color: $dark;
-            color: #fff;
-            font-size: var(--normal-font-size);
-            border-radius: .5rem;
-            cursor: pointer;
-            transition: .3s;
-            &:hover {
-                box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
-            }
-        }
-    }
-    /*Input focus move up label*/
-    
-    .form__input:focus+.form__label {
-        top: -.5rem;
-        left: .8rem;
-        color: $dark;
-        font-size: var(--small-font-size);
-        font-weight: 500;
-        z-index: 10;
-    }
-    /*Input focus sticky top label*/
-    
-    .form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
-        top: -.5rem;
-        left: .8rem;
-        z-index: 10;
-        font-size: var(--small-font-size);
-        font-weight: 500;
-    }
-    /*Input focus*/
-    
-    .form__input:focus {
-        border: 1.5px solid $dark;
-    }
-    
-    @media only screen and (max-width: 1600px) {}
-    
-    @media only screen and (max-width: 1440px) {
-        form {
-            width: 600px !important;
-        }
-    }
-    
-    @media (max-width: 1280px) {}
-    
-    @media (max-width: 1024px) {
-        .swiper__header {
-            font-size: 1.8rem;
-        }
-        #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-            // width
-            width: 370px;
-            max-height: 370px;
-        }
-        .swiper.text {
-            width: 120vw;
-        }
-    }
-    
-    @media (max-width: 900px) {
-        form {
-            width: 500px !important;
-        }
-    }
-    
-    @media (max-width: 800px) {}
-    
-    @media (max-width: 600px) {
-        form {
-            width: 400px !important;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        form {
-            width: 350px !important;
-        }
-    }
-    
-    @media (max-width: 430px) {}
-    
-    @media (max-width: 360px) {
-        form {
-            width: 320px !important;
-        }
-    }
+}
+
+
+/*Input focus move up label*/
+
+.form__input:focus+.form__label {
+    top: -.5rem;
+    left: .8rem;
+    color: $dark;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+
+/*Input focus sticky top label*/
+
+.form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
+    top: -.5rem;
+    left: .8rem;
+    z-index: 10;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+}
+
+
+/*Input focus*/
+
+.form__input:focus {
+    border: 1.5px solid $dark;
+}
+
+.swiper__header {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+    font-size: 6rem;
+}
+
+.content__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,18 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@200;300;400;500;600;900&family=Oswald:wght@200;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans:wght@400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 :root {
   /*===== Fuente y tipografia =====*/
-  --body-font: 'Roboto', sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: .75rem;
 }
@@ -51,6 +38,28 @@
   width: 100%;
 }
 
+body {
+  height: 100vh;
+  overflow: hidden;
+  position: relartive;
+}
+
+body #email {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .form__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,11 +90,14 @@
 }
 
 .form {
-  width: 360px;
-  padding: 4rem 2rem;
+  width: 800px;
+  padding: 3rem 2rem;
   border-radius: 1rem;
   -webkit-box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
           box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  background-color: white;
+  font-family: 'Noto Sans', sans-serif;
+  margin: auto;
 }
 
 .form__div {
@@ -138,6 +150,7 @@
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+  width: 100%;
 }
 
 .form__button:hover {
@@ -169,46 +182,26 @@
   border: 1.5px solid #1d1f26;
 }
 
-@media only screen and (max-width: 1440px) {
-  form {
-    width: 600px !important;
-  }
+.swiper__header {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  font-size: 6rem;
 }
 
-@media (max-width: 1024px) {
-  .swiper__header {
-    font-size: 1.8rem;
-  }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    width: 370px;
-    max-height: 370px;
-  }
-  .swiper.text {
-    width: 120vw;
-  }
-}
-
-@media (max-width: 900px) {
-  form {
-    width: 500px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  form {
-    width: 400px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  form {
-    width: 350px !important;
-  }
-}
-
-@media (max-width: 360px) {
-  form {
-    width: 320px !important;
-  }
+.content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=email.css.map */

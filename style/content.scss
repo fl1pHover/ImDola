@@ -187,30 +187,6 @@
                     margin: auto;
                     position: relative;
                     .content__gallery {
-                        .content__img {
-                            height: calc(100% + 6rem);
-                            position: relative;
-                            overflow: hidden;
-                            font-size: 16px;
-                            // animation: clip 1.6s cubic-bezier(.23, 1, .32, 1) forwards;
-                            padding: 4rem 2rem;
-                            // img {
-                            //     width: 100%;
-                            //     animation: img 1s ease !important;
-                            // }
-                            img {
-                                width: 100%;
-                                // background-color: #1d1f26;
-                                // left: 0;
-                                // -o-object-fit: cover;
-                                // object-fit: cover;
-                                // position: absolute;
-                                // top: 0;
-                            }
-                            .content__p {
-                                font-family: 'Montserrat', sans-serif;
-                            }
-                        }
                         .content__buy {
                             .content__p {
                                 display: grid;
@@ -228,6 +204,32 @@
                             }
                         }
                     }
+                }
+            }
+            
+            // Contentnii zurag
+            .content__img {
+                height: calc(100% + 6rem);
+                position: relative;
+                overflow: hidden;
+                font-size: 16px;
+                // animation: clip 1.6s cubic-bezier(.23, 1, .32, 1) forwards;
+                padding: 4rem 2rem;
+                // img {
+                //     width: 100%;
+                //     animation: img 1s ease !important;
+                // }
+                img {
+                    width: 100%;
+                    // background-color: #1d1f26;
+                    // left: 0;
+                    // -o-object-fit: cover;
+                    // object-fit: cover;
+                    // position: absolute;
+                    // top: 0;
+                }
+                .content__p {
+                    font-family: 'Montserrat', sans-serif;
                 }
             }
             

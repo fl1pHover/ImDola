@@ -8,9 +8,18 @@
     }
 }
 
-.content .gallery__container .content__gallery .tumbnail {
-    margin: 4rem 2rem;
-    .content__img {
-        padding: 0;
+.play__link {
+    display: flex;
+    align-items: center;
+    .play__btn {
+        font-size: 34px;
+        margin-left: 5px;
     }
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.content__logo {
+    margin-top: 50px;
 }

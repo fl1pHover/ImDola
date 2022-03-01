@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Im Dola</title>
+    <title>Instagram - Im Dola</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/content.css">
     <link rel="stylesheet" href="./style/email.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="transition ">
+
+    <div class="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
@@ -35,65 +35,79 @@
                         <p class="name gray">Dola</p>
                     </span>
                 </a>
+                <div class="nav__btn">
+                    <a class="hidden__overview overview" onclick="clicker('overview.html')">
+                        <img src="./img/whiteArrow.svg" alt="">
+                        <span class="overview btn left"> overview
+                        </span>
+                    </a>
+                    <a class="btn left underline link" onclick="clicker('about.html')">about
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
+    <section class="content">
+        <div class="content__container">
+            <div class="counter__header">
+                <span class="transparent__header">0</span><span class="count transparent__header">1</span>
+                <div class="content__header" style="width: 950px">
 
-    <section id="email__input">
-        <div class="form__container">
-            <h1 class="swiper__header">
-                Subsribtion
-            </h1>
-            <form action="" class="form">
-                <div class="user__input">
-                    <div class="form__div">
-                        <input type="text" class="form__input" placeholder=" " required>
-                        <label for="" class="form__label">Name</label>
-                    </div>
-                    <div class="form__div">
-                        <input type="email" class="form__input" placeholder=" " required>
-                        <label for="" class="form__label">Email</label>
-                    </div>
                 </div>
 
-                <div class="form__div form__area">
-                    <textarea name="message" id="message" class="form__input" placeholder=""></textarea>
-                    <label for="" class="form__label">Message</label>
-                </div>
-
-                <input type="submit" class="form__button" value="Send">
-            </form>
+            </div>
         </div>
     </section>
+    <section id="email">
+        <div class="swiper__header header__ani word__1">subscirbtion</div>
+        <form action="" class="form">
+            <div class="user__input">
+                <div class="form__div">
+                    <input type="text" class="form__input" placeholder=" " required>
+                    <label for="" class="form__label">Нэр</label>
+                </div>
+                <div class="form__div">
+                    <input type="email" class="form__input" placeholder=" " required>
+                    <label for="" class="form__label">Имэйл</label>
+                </div>
+            </div>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "soko.bbz.4@gmail.com",
-                Password: "12345678",
-                To: 'soko.bbz.4@gmail.com',
-                From: document.getElementById('email').value,
-                Subject: "This is the subject",
-                Body: "Name: " + document.getElementById("name").value +
-                    "<br> Email: " + document.getElementById("email").value +
-                    "<br> Message: " + document.getElementById("message").value
 
-            }).then(
-                message => alert("Message sent Succesfully")
-            );
-        }
-    </script> -->
+            <input type="submit" class="form__button" value="ИЛГЭЭХ">
+        </form>
+    </section>
+
+    <!-- Counter -->
+    <script>
+        var counter = document.querySelector(".count");
+        let count = 0;
+
+        setInterval(() => {
+            if (count < 4) {
+                count++;
+                counter.innerText = count;
+            }
+        }, 100)
+    </script>
+
+    <!-- AOS CDN & property-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 10,
+            offset: 200,
+            duration: 1000,
+
         });
     </script>
 
+    <!-- Scroll hide name -->
+    <script src="hide.js"></script>
+
+
     <!-- Page link and transition -->
-    <script src="/slide.js"></script>
+    <script src="slide.js"></script>
+
+
 </body>
 
 </html>
