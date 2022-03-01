@@ -333,7 +333,7 @@ nav .container .nav__content .nav__btn a::after {
 #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
   -o-object-fit: contain;
   object-fit: contain;
-  height: 600px;
+  height: 500px !important;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -622,6 +622,10 @@ nav .container .nav__content .nav__btn a::after {
   .swiper__header {
     font-size: 2.5rem;
   }
+  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+    height: 450px !important;
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -638,8 +642,8 @@ nav .container .nav__content .nav__btn a::after {
     font-size: 2.3rem;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -667,7 +671,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 160vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 600px;
+    height: 550px;
     width: 600px;
   }
 }
@@ -677,7 +681,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 200vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 550px;
+    height: 480px;
     width: 550px;
   }
 }
@@ -693,7 +697,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 200vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 450px;
+    height: 400px;
     max-width: 550px;
   }
 }
@@ -709,7 +713,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 250vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 400px;
+    height: 350px;
     max-width: 330px;
   }
 }
@@ -722,7 +726,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 250vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 400px;
+    height: 350px;
     max-width: 330px;
   }
 }
@@ -732,7 +736,7 @@ nav .container .nav__content .nav__btn a::after {
     width: 250vw;
   }
   #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    height: 350px;
+    height: 300px;
     max-width: 300px;
   }
 }
