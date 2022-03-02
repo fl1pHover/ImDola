@@ -550,6 +550,9 @@ nav .container .nav__content .nav__btn a::after {
 .swiper.text {
   position: absolute;
   width: 100vw !important;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .swiper-slide-active .slide__img {
