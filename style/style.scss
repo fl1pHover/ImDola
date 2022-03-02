@@ -689,3 +689,17 @@ nav {
         }
     }
 }
+
+// Smoooth displaying
+body {
+    animation: smooth 2s ease;
+}
+
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

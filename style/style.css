@@ -750,4 +750,27 @@ nav .container .nav__content .nav__btn a::after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
+body {
+  -webkit-animation: smooth 2s ease;
+          animation: smooth 2s ease;
+}
+
+@-webkit-keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -645,4 +645,27 @@ nav .container .nav__content .nav__btn a::after {
     line-height: 0;
   }
 }
+
+.content {
+  -webkit-animation: smooth 1.5s ease;
+          animation: smooth 1.5s ease;
+}
+
+@-webkit-keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=content.css.map */
