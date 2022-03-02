@@ -59,24 +59,25 @@
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/youtubeSlide.jpg" alt="Youtube Slide IMG">
+                            <img src="/img/Slide Img/youtubeSlide.jpg" alt="Youtube Slide IMG" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="slide__img zoom">
-                            <img src="/img/Slide Img/instagramSlide.jpg" alt="Instagram Slide IMG">
+                        <div class="slide__img">
+                            <img src="/img/Slide Img/instagramSlide.jpg" alt="Instagram Slide IMG" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <div class="slide__img zoom">
-                            <img src="/img/Slide Img/subscriptionSlide.jpg" alt="img3">
+                        <div class="slide__img">
+                            <img src="/img/Slide Img/subscriptionSlide.jpg" alt="img3" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -135,6 +136,7 @@
                             </h1>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -170,21 +172,18 @@
     <!-- Initialize Swiper-->
     <script>
         var swiper = new Swiper(".swiper", {
+
             spaceBetween: 30,
             centeredSlides: true,
-            parallax: true,
             speed: 1250,
             delay: 500,
-            loop: true,
-            // loopslides: 4,
+            rewind: true,
 
             allowTouchMove: false,
-            // ActiveXObject:0,
-            // activeIndex: 0,
-            // autoplay: {
-            //     delay: 4500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: false,
@@ -195,37 +194,32 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-        console.log(swiper[0].el.childNodes[5].children[0]);
+
 
         var swiperText = new Swiper(".text", {
             spaceBetween: 30,
             centeredSlides: true,
-            parallax: true,
             speed: 1250,
-            loop: true,
-            // loopslides: 4,
+            rewind: true,
 
-            // initialSlide: 0,
             slidesPerView: 3,
             delayBetweenSlides: 700,
             breakpoints: {
                 200: {
                     slidesPerView: 1,
-                    // speed: 20000,
                     delayBetweenSlides: 700,
                     delay: 700,
                 },
-                // when window width is >= 640px
                 901: {
                     slidesPerView: 3,
                 }
             },
 
             allowTouchMove: false,
-            // autoplay: {
-            //     delay: 4500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: false,
