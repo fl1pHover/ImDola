@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style/overview.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+    <!-- AOS animation CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -22,9 +23,8 @@
     </div>
     <nav id="swup" class="transition-fade">
         <div class="container">
-
             <div class="nav__content">
-                <a href="index.html" class="nav__pro">
+                <a onclick="clicker('index.html')" class="nav__pro">
                     <span class="pro__img ">
                         <img src="./img/dola4.jpg" class="pro" alt="pro">
                     </span>
@@ -34,8 +34,7 @@
                     </span>
                 </a>
                 <div class="nav__btn">
-
-                    <a href="about.html" class="btn left underline link">about
+                    <a onclick="clicker('about.html')" class="btn left underline link">about
                     </a>
                 </div>
             </div>
@@ -46,33 +45,32 @@
         <div class="container">
             <div class="grid__overview">
                 <div class="grid__img1" data-aos="fade-up" data-aos-delay="250">
-                    <a href="content.html" class="grid__img">
-                        <img src="/img/Slide Img/surgaltSlide.jpg" alt="Course Img">
-                        <a href="content.html" class="btn left">Сургалтын мэдээлэл</a>
+                    <a onclick="clicker('content.html')" class="grid__img">
+                        <img src="/img/Slide Img/surgaltSlide-min.jpg" alt="Course Img">
+                        <a onclick="clicker('content.html')" class="btn left">Сургалтын мэдээлэл</a>
                     </a>
                 </div>
-                <div class="grid__img2">
-                    <a href="youtube.html" class="grid__img" data-aos="fade-up" data-aos-delay="250">
-                        <img src="/img/Slide Img/youtubeSlide.jpg" alt="Youtube page img">
-                        <a href="youtube.html" class="btn left">Youtube</a>
+                <div class="grid__img2" data-aos="fade-up" data-aos-delay="250">
+                    <a onclick="clicker('youtube.html')" class="grid__img">
+                        <img src="/img/Slide Img/youtubeSlide-min.jpg" alt="Youtube page img">
+                        <a onclick="clicker('youtube.html')" class="btn left">Youtube</a>
                     </a>
                 </div>
-                <div class="grid__img3">
-                    <a href="instagram.html" class="grid__img" data-aos="fade-up" data-aos-delay="250">
-                        <img src="/img/Slide Img/instagramSlide.jpg" alt="">
-                        <a href="instagram.html" class="btn left">Instagram</a>
+                <div class="grid__img3" data-aos="fade-up" data-aos-delay="250">
+                    <a onclick="clicker('instagram.html')" class="grid__img">
+                        <img src="/img/Slide Img/instagramSlide-min.jpg" alt="">
+                        <a onclick="clicker('instagram.html')" class="btn left">Instagram</a>
                     </a>
                 </div>
-                <div class="grid__img4">
-                    <a href="email.html" class="grid__img" data-aos="fade-up" data-aos-delay="250">
-                        <img src="/img/Slide Img/subscriptionSlide.jpg" alt="">
-                        <a href="email.html" class="btn left">Email</a>
+                <div class="grid__img4" data-aos="fade-up" data-aos-delay="250">
+                    <a onclick="clicker('email.html')" class="grid__img">
+                        <img src="/img/Slide Img/subscriptionSlide-min.jpg" alt="">
+                        <a onclick="clicker('email.html')" class="btn left">Email</a>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
 
     <div class="transition-wipe overlap"></div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -83,30 +81,7 @@
             duration: 1000,
         });
     </script>
-    <script>
-        const nav__pro = document.querySelector(".nav__pro");
-        const link = document.querySelector(".link");
-        // Animation class
-        const transition = document.querySelector(".transition");
-
-        // About animation
-        nav__pro.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = nav__pro.href;
-            }, 900);
-        });
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
-
-        // Slide 1 animation
-    </script>
+    <script src="slide.js"></script>
 </body>
 
 </html>

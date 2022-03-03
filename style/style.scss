@@ -1,6 +1,7 @@
 @import 'var';
 @import 'transition';
 @import 'mobile';
+@import 'flexCenter';
 body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.5;
@@ -134,31 +135,6 @@ img {
     }
 }
 
-// .underline {
-//     position: relative;
-//     &:hover {
-//         color: var(--var-dark);
-//     }
-//     &::before {
-//         content: '';
-//         position: absolute;
-//         left: 0%;
-//         bottom: 0%;
-//         width: 100%;
-//         height: 1px;
-//         background: var(--var-gray);
-//         opacity: 0.2;
-//     }
-//     &::after {
-//         content: '';
-//         position: absolute;
-//         left: 0%;
-//         bottom: 0%;
-//         width: 100%;
-//         height: 1px;
-//         background: var(--var-dark);
-//     }
-// }
 nav {
     position: fixed;
     top: 0%;
@@ -169,11 +145,9 @@ nav {
         position: relative;
         padding: 40px 80px;
         .nav__content {
-            display: flex;
-            justify-content: space-between;
+            @include flexCenter(space-between, row);
             .nav__pro {
-                display: flex;
-                align-items: center;
+                @include flexCenter(center, row);
                 padding: 1px;
                 cursor: pointer;
                 &:hover {
@@ -278,9 +252,7 @@ nav {
                     text-align: center;
                     font-size: 18px;
                     background: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flexCenter(center, row);
                     .slide__img {
                         -o-object-fit: contain;
                         object-fit: contain;
@@ -288,13 +260,12 @@ nav {
                         position: relative;
                         overflow: hidden;
                         // delgets jijgereheer zurag jijgerehgui bsn uchir flex bolhov
-                        display: flex;
-                        place-items: center;
-                        justify-content: center;
-                        align-items: center;
+                        // display: block;
+                        // place-items: center;
+                        // justify-content: center;
+                        // align-items: center;
                         img {
                             display: block;
-                            // width: 110%;
                             height: 110%;
                             max-width: 100%;
                             -o-object-fit: cover;
@@ -346,13 +317,6 @@ nav {
                                     height: 1px;
                                     background: $white;
                                 }
-                            }
-                        }
-                        &:hover~.swiper-slide-acitve.swiper__img {
-                            display: none;
-                            img {
-                                transform: scale(1.2) !important;
-                                display: none;
                             }
                         }
                     }
@@ -556,14 +520,6 @@ nav {
     .swiper__header {
         font-size: 2.5rem;
     }
-    // #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
-    //     height: 530px;
-    //     // Width nemsen
-    //     width: 530px;
-    //     display: grid;
-    //     place-items: center;
-    //     position: relative;
-    // }
 }
 
 @media (max-width: 1280px) {
@@ -678,10 +634,6 @@ nav {
     }
 }
 
-// .swiper-pagination-progressbar-fill {
-//     transform: translate3d(0px, 0px, 0px) scaleX(0.25) scaleY(1) !important;
-//     transition-duration: 1250ms !important;
-// }
 .swiper-slide-active {
     .slide__img.zoom {
         overflow: hidden;
@@ -694,7 +646,17 @@ nav {
 
 // Smoooth displaying
 body {
+    -webkit-animation: smooth 2s ease;
     animation: smooth 2s ease;
+}
+
+@-webkit-keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes smooth {

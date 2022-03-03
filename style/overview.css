@@ -81,6 +81,7 @@
   margin-top: 100px;
   -webkit-animation: hopup 1s ease;
           animation: hopup 1s ease;
+  cursor: pointer;
 }
 
 .grid__img img {
@@ -99,8 +100,8 @@
 }
 
 .grid__img:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @-webkit-keyframes hopup {

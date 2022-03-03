@@ -9,12 +9,11 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/about.css">
     <link rel="stylesheet" href="./style/content.css">
     <link rel="stylesheet" href="./style/email.css">
 
+    <!-- AOS animation CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -26,7 +25,7 @@
     <nav>
         <div class="container">
             <div class="nav__content">
-                <a class="nav__pro links" onclick="clicker('index.html')">
+                <a onclick="clicker('index.html')" class="nav__pro links">
                     <span class="pro__img ">
                         <img src="./img/dola4.jpg" class="pro" alt="pro">
                     </span>
@@ -36,12 +35,12 @@
                     </span>
                 </a>
                 <div class="nav__btn">
-                    <a class="hidden__overview overview" onclick="clicker('overview.html')">
+                    <a onclick="clicker('overview.html')" class="hidden__overview overview">
                         <img src="./img/whiteArrow.svg" alt="">
                         <span class="overview btn left"> overview
                         </span>
                     </a>
-                    <a class="btn left underline link" onclick="clicker('about.html')"><span class="overview btn left">
+                    <a onclick="clicker('about.html')" class="btn left underline link"><span class="overview btn left">
                             about
                         </span>
                     </a>
@@ -54,9 +53,7 @@
             <div class="counter__header">
                 <span class="transparent__header">0</span><span class="count transparent__header">1</span>
                 <div class="content__header" style="width: 950px">
-
                 </div>
-
             </div>
         </div>
     </section>
@@ -73,8 +70,6 @@
                     <label for="" class="form__label">Имэйл</label>
                 </div>
             </div>
-
-
             <input type="submit" class="form__button" value="ИЛГЭЭХ">
         </form>
     </section>
@@ -98,17 +93,14 @@
         AOS.init({
             offset: 200,
             duration: 1000,
-
         });
     </script>
 
     <!-- Scroll hide name -->
     <script src="hide.js"></script>
 
-
     <!-- Page link and transition -->
     <script src="slide.js"></script>
-
 
 </body>
 

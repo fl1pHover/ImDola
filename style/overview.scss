@@ -50,27 +50,49 @@
     display: inline-block;
     width: inherit;
     margin-top: 100px;
+    -webkit-animation: hopup 1s ease;
     animation: hopup 1s ease;
+    cursor: pointer;
     img {
         transform: scale(1);
         -webkit-animation: overviewImg 1.5s linear;
         animation: overviewImg 1.5s linear;
         transition: 0.4s;
+        -webkit-animation-timing-function: cubic-bezier(.23, 1, .32, 1) forwards;
         animation-timing-function: cubic-bezier(.23, 1, .32, 1) forwards;
+        -o-object-fit: cover;
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
     &:hover {
         img {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
+    }
+}
+
+@-webkit-keyframes hopup {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
     }
 }
 
 @keyframes hopup {
     from {
         transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes overviewImg {
+    from {
+        transform: scale(1.1);
     }
     to {
         transform: scale(1);

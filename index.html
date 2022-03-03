@@ -10,19 +10,17 @@
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
 
+    <!-- Swiper CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
     <div class="transition">
         <div class="cover cover1"></div>
-        <!-- <div class="cover cover2"></div> -->
     </div>
     <nav>
         <div class="container">
-
             <div class="nav__content">
-
                 <!-- Navbar Profile link -->
                 <a href="#" class="nav__pro links">
                     <span class="pro__img ">
@@ -42,47 +40,43 @@
         </div>
     </nav>
 
-
     <section id="main" data-aos="fade-up">
         <div class="swiper__container">
             <div class="swiper">
-                <!-- Additional required wrapper -->
+
                 <!-- Swiper only IMG -->
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/surgaltSlide.jpg" alt="Course Slide IMG" class="zoom">
+                            <img src="/img/Slide Img/surgaltSlide-min.jpg" alt="Course Slide IMG" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/youtubeSlide.jpg" alt="Youtube Slide IMG" class="zoom">
+                            <img src="/img/Slide Img/youtubeSlide-min.jpg" alt="Youtube Slide IMG" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/instagramSlide.jpg" alt="Instagram Slide IMG" class="zoom">
+                            <img src="/img/Slide Img/instagramSlide-min.jpg" alt="Instagram Slide IMG" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
                         <div class="slide__img">
-                            <img src="/img/Slide Img/subscriptionSlide.jpg" alt="img3" class="zoom">
+                            <img src="/img/Slide Img/subscriptionSlide-min.jpg" alt="img3" class="zoom">
                             <div class="overlay"></div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <div class="swiper text">
-                <!-- Additional required wrapper -->
                 <!-- Swiper only slide Title -->
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
@@ -136,7 +130,6 @@
                             </h1>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -172,13 +165,12 @@
     <!-- Initialize Swiper-->
     <script>
         var swiper = new Swiper(".swiper", {
-
             spaceBetween: 30,
             centeredSlides: true,
             speed: 1250,
             delay: 500,
+            // Swiper dahij yvna
             rewind: true,
-
             allowTouchMove: false,
             autoplay: {
                 delay: 4500,
@@ -200,8 +192,8 @@
             spaceBetween: 30,
             centeredSlides: true,
             speed: 1250,
+            // Swiper dahij yvna
             rewind: true,
-
             slidesPerView: 3,
             delayBetweenSlides: 700,
             breakpoints: {
@@ -214,7 +206,6 @@
                     slidesPerView: 3,
                 }
             },
-
             allowTouchMove: false,
             autoplay: {
                 delay: 4500,
@@ -234,7 +225,6 @@
 
     <!-- Page link and transition -->
     <script src="slide.js"></script>
-
 </body>
 
 </html>
