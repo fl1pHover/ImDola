@@ -236,7 +236,7 @@ nav {
         display: grid;
         place-items: center;
         .swiper {
-            display: flex;
+            @include flexCenter(center, none);
             width: 100vw;
             white-space: nowrap;
             .swiper-wrapper {
