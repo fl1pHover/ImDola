@@ -260,10 +260,7 @@ nav {
                         position: relative;
                         overflow: hidden;
                         // delgets jijgereheer zurag jijgerehgui bsn uchir flex bolhov
-                        // display: block;
-                        // place-items: center;
-                        // justify-content: center;
-                        // align-items: center;
+                        @include flexCenter(center, none);
                         img {
                             display: block;
                             height: 110%;
