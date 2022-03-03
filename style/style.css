@@ -303,6 +303,7 @@ nav .container .nav__content .nav__btn a::after {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 #main .swiper__container .swiper {
@@ -321,6 +322,10 @@ nav .container .nav__content .nav__btn a::after {
           align-items: center;
   width: 100vw;
   white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 #main .swiper__container .swiper .swiper-wrapper {

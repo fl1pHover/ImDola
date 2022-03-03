@@ -235,10 +235,15 @@ nav {
         height: 100vh;
         display: grid;
         place-items: center;
+        position: relative;
         .swiper {
             @include flexCenter(center, none);
             width: 100vw;
             white-space: nowrap;
+            // position: relative; 
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
             .swiper-wrapper {
                 display: flex;
                 align-items: center;
@@ -246,6 +251,9 @@ nav {
                 position: relative;
                 transition-delay: 0.3s;
                 transition-timing-function: cubic-bezier(.645, .045, .355, 1);
+                // position: absolute;
+                // top: 50%;
+                // transform: translate(0, -50%);
                 .swiper-slide {
                     width: 100vw;
                     // height: 705px;
