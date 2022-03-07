@@ -58,19 +58,25 @@
         </div>
     </section>
     <section id="email">
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)
+        {window.location='im-dola.vercel.app/email.html';}"></iframe>
+
         <div class="swiper__header header__ani word__1">subscirbtion</div>
-        <form action="" class="form">
-            <div class="user__input">
+        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSctL_lFje91ZhZKFl5T9LGgtwG49BhXk0scRf2dn9mkcG39lA/formResponse" class="form" target="hidden_iframe">
+            <div class="user__input" method="post" autocomplete="off" name="google-sheet">
                 <div class="form__div">
-                    <input type="text" class="form__input" placeholder=" " required>
+                    <input type="text" name="entry.1397276595" class="form__input" placeholder="" value="" required="">
                     <label for="" class="form__label">Нэр</label>
                 </div>
                 <div class="form__div">
-                    <input type="email" class="form__input" placeholder=" " required>
+                    <input type="email" name="entry.1210516443" class="form__input" placeholder="" value="" required="">
                     <label for="" class="form__label">Имэйл</label>
                 </div>
             </div>
-            <input type="submit" class="form__button" value="ИЛГЭЭХ">
+            <input type="submit" name="submit" class="form__button" value="ИЛГЭЭХ" onclick="alert('Амжилттай бүртгэгдлээ!');">
         </form>
     </section>
 
@@ -101,7 +107,23 @@
 
     <!-- Page link and transition -->
     <script src="slide.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRWLYgruUExe1hCxrb9ls90b-2jghGQpcQaa25mz27jX6XQMtOxvBm6oPeOhDmqXMOcw/exec'
+        const form = document.forms['google-sheet']
 
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>

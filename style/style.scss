@@ -147,7 +147,7 @@ nav {
         .nav__content {
             @include flexCenter(space-between, row);
             .nav__pro {
-                @include flexCenter(center, row);
+                @include flexCenter(none, row);
                 padding: 1px;
                 cursor: pointer;
                 &:hover {

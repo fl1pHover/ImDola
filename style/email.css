@@ -204,4 +204,103 @@ body #email {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+@media only screen and (max-width: 1440px) {
+  .form {
+    width: 700px;
+  }
+  .swiper__header {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .form {
+    width: 600px;
+  }
+  .swiper__header {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .form {
+    width: 500px;
+  }
+  .user__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .user__input .form__div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    width: 400px;
+  }
+  .user__input {
+    margin-bottom: 30px;
+  }
+  .user__input .form__div {
+    margin: 0;
+  }
+  .swiper__header {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 350px;
+  }
+  .user__input {
+    margin-bottom: 40px;
+  }
+  .user__input .form__div {
+    margin: 0;
+  }
+  .swiper__header {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .swiper__header {
+    font-size: 2rem;
+  }
+  .form {
+    width: 300px;
+  }
+  .user__input {
+    margin-bottom: 30px;
+  }
+  .user__input .form__div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .form {
+    width: 270px;
+  }
+}
+
+.swiper-slide-active .slide__img.zoom {
+  overflow: hidden;
+  position: absolute;
+}
+
+.swiper-slide-active .slide__img.zoom img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 /*# sourceMappingURL=email.css.map */
