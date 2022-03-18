@@ -10,14 +10,14 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #1d1f26;
+    background: white;
     z-index: 10000;
 }
 
 .loader span {
     width: 10px;
     height: 60px;
-    background: white;
+    background: #1d1f26;
     margin: 0px 1px;
     animation: loading 1600ms infinite ease-in-out;
     z-index: 999;
