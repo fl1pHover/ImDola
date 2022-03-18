@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/dolaFavicon.jpg" />
     <title>Email - Im Dola</title>
 
     <!-- Style -->
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+    <!-- Page loader -->
     <div class="loader">
         <span></span>
         <span></span>
@@ -30,10 +32,14 @@
         <span></span>
         <span></span>
     </div>
+
+    <!-- Page transition -->
     <div class="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
+
+    <!-- navbar -->
     <nav>
         <div class="container">
             <div class="nav__content">
@@ -60,6 +66,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- Content section -->
     <section class="content">
         <div class="content__container">
             <div class="counter__header">
@@ -69,6 +77,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Email Form -->
     <section id="email">
         <div class="swiper__header header__ani word__1">subscribtion</div>
         <form method="post" autocomplete="off" name="google-sheet" class="form">
@@ -119,6 +129,8 @@
             $('.email').fadeIn(1000);
         });
     </script>
+
+    <!-- Email form data -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzRWLYgruUExe1hCxrb9ls90b-2jghGQpcQaa25mz27jX6XQMtOxvBm6oPeOhDmqXMOcw/exec'
         const form = document.forms['google-sheet']

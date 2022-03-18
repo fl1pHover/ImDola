@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!-- Page loader  -->
     <div class="loader">
         <span></span>
         <span></span>
@@ -29,9 +30,13 @@
         <span></span>
         <span></span>
     </div>
+
+    <!-- Page transition -->
     <div class="transition">
         <div class="cover cover1"></div>
     </div>
+
+    <!-- navbar -->
     <nav>
         <div class="container">
             <div class="nav__content">
@@ -54,6 +59,7 @@
         </div>
     </nav>
 
+    <!-- Main section -->
     <section id="main" data-aos="fade-up">
         <div class="swiper__container">
             <div class="swiper">
@@ -122,7 +128,7 @@
                     <div class="swiper-slide">
                         <div class="slide__content click2">
                             <h1 class="headers" data-swiper-parallax-duration="2500">
-                                <a class="swiper__header" onclick="clicker('instagra.html')">
+                                <a class="swiper__header" onclick="clicker('instagram.html')">
                                     <!-- Insta -->
                                     <br>
                                     <span class="left underline">Instagram</span>
@@ -173,6 +179,7 @@
         </div>
     </section>
 
+    <!-- page loader js -->
     <script>
         $(window).on('load', function() {
             $('.loader').fadeOut(1000);

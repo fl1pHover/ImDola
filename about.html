@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/dolaFavicon.jpg" />
     <title>About - Im Dola</title>
 
     <!-- Style -->
@@ -13,8 +14,7 @@
     <link rel="stylesheet" href="./style/loader.css">
 
     <!-- Fontawesome  CDN -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Aos animation CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <!-- Page loader -->
     <div class="loader">
         <span></span>
         <span></span>
@@ -32,10 +33,14 @@
         <span></span>
         <span></span>
     </div>
-    <div class="transition ">
+
+    <!-- Page transiton -->
+    <div class="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
+
+    <!-- navbar -->
     <nav>
         <div class="container">
             <div class="nav__content">
@@ -51,6 +56,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- About section -->
     <section id="about">
         <div class="about__container">
             <div class="about__content">
@@ -74,17 +81,17 @@
                     <span data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000">холбоотойгоор “Хэрхэн
                         чанартай видео контент бүтээх вэ” сургалтыг гаргасан.
                     </span>
-
                 </div>
                 <div class="about__text">
                     <span data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                         Энэхүү вэб хуудсаар дамжуулан тантай</span>
                     <span data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"> холбогдож байгаа даа баяртай
                         байна.</span>
-
                 </div>
             </div>
         </div>
+
+        <!-- About footer -->
         <div class="about__footer">
             <div class="about__container">
                 <div class="about__icon">
@@ -99,12 +106,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Loading  -->
     <script>
-        $(window).on('load', function () {
+        $(window).on('load', function() {
             $('.loader').fadeOut(1000);
             $('#about').fadeIn(1000);
         });
     </script>
+
+    <!-- Aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

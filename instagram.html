@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/dolaFavicon.jpg" />
     <title>Instagram - Im Dola</title>
 
     <!-- Style -->
@@ -23,6 +24,7 @@
 </head>
 
 <body>
+    <!-- Page loader -->
     <div class="loader">
         <span></span>
         <span></span>
@@ -31,10 +33,14 @@
         <span></span>
         <span></span>
     </div>
+
+    <!-- Page transition -->
     <div class="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
+
+    <!-- navbar -->
     <nav>
         <div class="container">
             <div class="nav__content">
@@ -53,14 +59,15 @@
                         <span class="overview btn left"> overview
                         </span>
                     </a>
-                    <a class="overview btn left underline link" onclick="clicker('about.html')"> <span
-                            class="overview btn left"> about
+                    <a class="overview btn left underline link" onclick="clicker('about.html')"> <span class="overview btn left"> about
                         </span>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- content section -->
     <section class="content">
         <div class="content__container">
             <div class="counter__header">
@@ -110,11 +117,13 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+    <!-- page loader js -->
     <script src="loader.js"></script>
+
     <!-- Counter -->
     <script>
         var counter = document.querySelector(".count");

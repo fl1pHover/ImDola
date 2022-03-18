@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/dolaFavicon.jpg" />
     <title>Overview - Im Dola</title>
 
     <!-- Style -->
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="./style/overview.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/loader.css">
-
 
     <!-- AOS animation CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- page loader -->
     <div class="loader">
         <span></span>
         <span></span>
@@ -30,10 +31,14 @@
         <span></span>
         <span></span>
     </div>
+
+    <!-- page transition -->
     <div class="transition">
         <div class="cover cover1"></div>
         <div class="cover cover2"></div>
     </div>
+
+    <!-- navbar -->
     <nav id="swup" class="transition-fade">
         <div class="container">
             <div class="nav__content">
@@ -54,6 +59,7 @@
         </div>
     </nav>
 
+    <!-- Overview section -->
     <section id="overview">
         <div class="container">
             <div class="grid__overview">
@@ -85,9 +91,14 @@
         </div>
     </section>
 
-    <div class="transition-wipe overlap"></div>
+    <!-- <div class="transition-wipe overlap"></div> -->
+
+    <!-- Page loader js -->
     <script src="loader.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -95,6 +106,8 @@
             duration: 1000,
         });
     </script>
+
+    <!-- Page link and transition -->
     <script src="slide.js"></script>
 </body>
 
