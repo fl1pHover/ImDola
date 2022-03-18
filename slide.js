@@ -9,5 +9,4 @@ function clicker(teemaa) {
     setTimeout(() => {
         window.location = teemaa;
     }, 900);
-    return clicker(teemaa);
 }
