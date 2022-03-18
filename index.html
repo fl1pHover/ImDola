@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/dolaFavicon.jpg" />
     <title>Im Dola</title>
 
     <!-- Style -->
@@ -13,6 +14,9 @@
 
     <!-- Swiper CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -168,12 +172,13 @@
         </div>
     </section>
 
-
     <script>
         $(window).on("load", function () {
-            $(".loader").fadeout("slow");
+            $(".loader").fadeOut(1000);
+            $("#main").fadeIn(1000);
         })
     </script>
+
     <!-- Swiper CDN -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

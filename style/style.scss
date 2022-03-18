@@ -8,8 +8,8 @@ body {
     color: #1d1f26;
     -ms-scroll-chaining: none;
     overscroll-behavior: none;
-    -webkit-animation: trans 0.7s;
-    animation: trans 0.7s;
+    // -webkit-animation: trans 0.7s;
+    // animation: trans 0.7s;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -18,6 +18,31 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    // display: flex;
+}
+
+// Smoooth displaying
+#main {
+    -webkit-animation: smooth 4s ease;
+    animation: smooth 4s ease;
+}
+
+@-webkit-keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 a {
@@ -646,29 +671,5 @@ nav {
         img {
             transform: scale(1);
         }
-    }
-}
-
-// Smoooth displaying
-body {
-    -webkit-animation: smooth 2s ease;
-    animation: smooth 2s ease;
-}
-
-@-webkit-keyframes smooth {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes smooth {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
