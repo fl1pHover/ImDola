@@ -1,12 +1,13 @@
 // Animation click links
-const link = document.querySelector(".link");
+var link = document.querySelector('.link');
 
 // Animation class
-const transition = document.querySelector(".transition");
+var transition = document.querySelector('.transition');
 
 function clicker(teemaa) {
-    transition.classList.add("slide");
+    transition.classList.add('slide');
     setTimeout(() => {
         window.location = teemaa;
     }, 900);
+    return clicker(teemaa);
 }
