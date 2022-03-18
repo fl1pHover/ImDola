@@ -9,12 +9,21 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/loader.css">
 
     <!-- Swiper CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="transition">
         <div class="cover cover1"></div>
     </div>
@@ -159,6 +168,12 @@
         </div>
     </section>
 
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader").fadeout("slow");
+        })
+    </script>
     <!-- Swiper CDN -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
