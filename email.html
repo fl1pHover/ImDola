@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram - Im Dola</title>
+    <title>Email - Im Dola</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="./style/style.css">
@@ -58,25 +58,19 @@
         </div>
     </section>
     <section id="email">
-        <script type="text/javascript">
-            var submitted = false;
-        </script>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)
-        {window.location='im-dola.vercel.app/email.html';}"></iframe>
-
-        <div class="swiper__header header__ani word__1">subscirbtion</div>
-        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSctL_lFje91ZhZKFl5T9LGgtwG49BhXk0scRf2dn9mkcG39lA/formResponse" class="form" target="hidden_iframe">
+        <div class="swiper__header header__ani word__1">subscribtion</div>
+        <form method="post" autocomplete="off" name="google-sheet" class="form">
             <div class="user__input" method="post" autocomplete="off" name="google-sheet">
                 <div class="form__div">
-                    <input type="text" name="entry.1397276595" class="form__input" placeholder="" value="" required="">
+                    <input id="name__field" type="text" name="Name" class="form__input" required>
                     <label for="" class="form__label">Нэр</label>
                 </div>
                 <div class="form__div">
-                    <input type="email" name="entry.1210516443" class="form__input" placeholder="" value="" required="">
+                    <input id="email__field" type="email" name="Email" class="form__input" required>
                     <label for="" class="form__label">Имэйл</label>
                 </div>
             </div>
-            <input type="submit" name="submit" class="form__button" value="ИЛГЭЭХ" onclick="alert('Амжилттай бүртгэгдлээ!');">
+            <input id="submit__btn" type="submit" name="submit" class="form__button" value="ИЛГЭЭХ">
         </form>
     </section>
 
@@ -114,16 +108,25 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => alert("Амжилттай бүртгэгдлээ"))
+                .catch(error => console.error('Error!', error.message));
+
+            // Reset field after submit
+            const inputs = document.querySelectorAll('#email__field, #name__field');
+
+            inputs.forEach(input => {
+                input.value = '';
+            });
         })
     </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 </body>
 
 </html>
