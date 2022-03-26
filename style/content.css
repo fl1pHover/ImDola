@@ -17,9 +17,9 @@ body {
 
 .small__header {
   color: rgba(255, 255, 255, 0.4);
-  font-size: .812rem;
+  font-size: 0.812rem;
   font-weight: 700;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -446,6 +446,7 @@ nav .container .nav__content .nav__btn a::after {
 @media (min-width: 900px) and (max-width: 1280px) {
   .content__header {
     width: 850px !important;
+    font-size: 8rem;
   }
   .small__header {
     font-size: 0.7rem;
