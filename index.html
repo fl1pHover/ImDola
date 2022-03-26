@@ -178,8 +178,12 @@
             </div>
         </div>
     </section>
-
-    <script></script>
+    <script>
+        window.addEventListener("popstate", function () {
+            clicker(teemaa);
+            console.log('pisda');
+        })
+    </script>
     <!-- page loader js -->
     <script>
         $(window).on('load', function () {

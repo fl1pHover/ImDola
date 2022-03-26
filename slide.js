@@ -5,8 +5,8 @@ var link = document.querySelector('.link');
 var transition = document.querySelector('.transition');
 
 function clicker(teemaa) {
-    transition.classList.add('slide');
-    setTimeout(() => {
-        window.location = teemaa;
-    }, 900);
+	transition.classList.add('slide');
+	setTimeout(() => {
+		window.location = teemaa;
+	}, 900);
 }

@@ -10,53 +10,6 @@
           box-sizing: border-box;
 }
 
-.cover {
-  position: absolute;
-  height: 500vh;
-  width: 100vw;
-  top: 0;
-  left: -100vw;
-  z-index: 1000;
-}
-
-.transition.slide .cover1 {
-  background-color: #1d1f26;
-  -webkit-animation: slide 0.5s ease-in forwards;
-  animation: slide 0.5s ease-in forwards;
-  visibility: visible;
-}
-
-.transition.slide .cover2 {
-  background-color: white;
-  -webkit-animation: slide 0.5s ease-in forwards;
-  animation: slide 0.5s ease-in forwards;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  visibility: visible;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    left: -100vw;
-    display: block;
-  }
-  100% {
-    left: 0;
-    display: none;
-  }
-}
-
-@keyframes slide {
-  0% {
-    left: -100vw;
-    display: block;
-  }
-  100% {
-    left: 0;
-    display: none;
-  }
-}
-
 body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
