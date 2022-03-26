@@ -26,12 +26,11 @@
 			visibility: hidden;
 		}
 		1% {
-			left: -100vw;
-			visibility: hidden;
-		}
-		100% {
 			visibility: visible;
 			left: 0;
+		}
+		100% {
+			visibility: hidden;
 		}
 	}
 	@keyframes slide {
@@ -39,12 +38,11 @@
 			visibility: hidden;
 		}
 		1% {
-			left: -100vw;
-			visibility: hidden;
-		}
-		100% {
 			visibility: visible;
 			left: 0;
+		}
+		100% {
+			visibility: hidden;
 		}
 	}
 	// @-webkit-keyframes slide {
