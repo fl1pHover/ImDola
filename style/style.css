@@ -68,33 +68,34 @@ img {
 
 .transition.slide .cover1 {
   background-color: #1d1f26;
-  -webkit-animation: slide 5s ease-in forwards;
-  animation: slide 5s ease-in forwards;
+  -webkit-animation: slide 1.5s ease-in forwards;
+  animation: slide 1.5s ease-in forwards;
 }
 
 .transition.slide .cover2 {
   background-color: white;
-  -webkit-animation: slide 5s ease-in forwards;
-  animation: slide 5s ease-in forwards;
+  -webkit-animation: slide 1.5s ease-in forwards;
+  animation: slide 1.5s ease-in forwards;
+  -moz-animation: slide 1.5s ease-in forwards;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-@-webkit-keyframes slide {
+@keyframes slide {
   0% {
-    left: -100vw;
+    left: -200vw;
   }
   100% {
-    left: 200vw;
+    left: 100vw;
   }
 }
 
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
-    left: -100vw;
+    left: -200vw;
   }
   100% {
-    left: 200vw;
+    left: 100vw;
   }
 }
 
