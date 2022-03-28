@@ -21,7 +21,7 @@
 
 </head>
 
-<body onLoad=" LoadOnce()">
+<body>
     <!-- Page loader  -->
     <div class="loader">
         <span></span>
@@ -257,14 +257,9 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+        response.setIntHeader("Refresh", 1);
     </script>
-    <script language=" JavaScript">
 
-        function LoadOnce() {
-            window.location.reload();
-        }
-
-    </script>
 
 
 </body>
