@@ -62,13 +62,13 @@ a {
   z-index: 1000;
 }
 
-.transition .cover1 {
+.transition.slide .cover1 {
   background-color: #1d1f26;
   -webkit-animation: slide 0.5s ease-in forwards;
   animation: slide 0.5s ease-in forwards;
 }
 
-.transition .cover2 {
+.transition.slide .cover2 {
   background-color: white;
   -webkit-animation: slide 0.5s ease-in forwards;
   animation: slide 0.5s ease-in forwards;
