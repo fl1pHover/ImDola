@@ -10,6 +10,48 @@
           box-sizing: border-box;
 }
 
+.cover {
+  position: absolute;
+  height: 500vh;
+  width: 100vw;
+  top: 0;
+  left: -100vw;
+  z-index: 1000;
+}
+
+.transition.slide .cover1 {
+  background-color: #1d1f26;
+  -webkit-animation: slide 0.5s ease-in forwards;
+  animation: slide 0.5s ease-in forwards;
+}
+
+.transition.slide .cover2 {
+  background-color: white;
+  -webkit-animation: slide 0.5s ease-in forwards;
+  animation: slide 0.5s ease-in forwards;
+  -moz-animation: slide 0.5s ease-in forwards;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
@@ -57,29 +99,6 @@ img {
   pointer-events: none;
 }
 
-.cover {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: -100vw;
-  z-index: 1000;
-}
-
-.transition.slide .cover1 {
-  background-color: #1d1f26;
-  -webkit-animation: slide 0.5s ease-in forwards;
-  animation: slide 0.5s ease-in forwards;
-}
-
-.transition.slide .cover2 {
-  background-color: white;
-  -webkit-animation: slide 0.5s ease-in forwards;
-  animation: slide 0.5s ease-in forwards;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
 .gray {
   opacity: 0.3;
   -webkit-transition: 0.2s ease-in-out;
@@ -121,7 +140,7 @@ img {
 .swiper__header {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
-  line-height: .875;
+  line-height: 0.875;
   font-size: 3rem;
   text-transform: uppercase;
   text-align: left;
@@ -140,9 +159,9 @@ img {
 
 .btn {
   position: relative;
-  font-size: .687rem;
+  font-size: 0.687rem;
   font-weight: 700;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   padding: 5px 0;
   text-transform: uppercase;
   color: gray;
@@ -255,9 +274,9 @@ nav .container .nav__content .nav__pro .full__name {
 }
 
 nav .container .nav__content .nav__pro .full__name .name {
-  font-size: .812rem;
+  font-size: 0.812rem;
   font-weight: 700;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: dark;
 }
 
@@ -276,9 +295,9 @@ nav .container .nav__content .nav__btn {
 
 nav .container .nav__content .nav__btn a {
   position: relative;
-  font-size: .687rem;
+  font-size: 0.687rem;
   font-weight: 700;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   padding: 5px 0;
   text-transform: uppercase;
   color: rgba(29, 31, 38, 0.5);
@@ -422,8 +441,8 @@ nav .container .nav__content .nav__btn a::after {
   height: 110%;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-transform: .1 ease;
-          transform: .1 ease;
+  -webkit-transform: 0.1 ease;
+          transform: 0.1 ease;
   -webkit-transition-delay: 0.95s;
           transition-delay: 0.95s;
 }
@@ -472,7 +491,8 @@ nav .container .nav__content .nav__btn a::after {
 .swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal,
 .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
-.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.swiper-vertical
+> .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   position: absolute;
   width: 200px !important;
   height: 1px !important;
@@ -543,14 +563,14 @@ nav .container .nav__content .nav__btn a::after {
   stroke-dasharray: 138;
   stroke-dashoffset: 285;
   stroke-width: 1px;
-  -webkit-animation: dash-out .7s ease-in-out forwards;
-  animation: dash-out .7s ease-in-out forwards;
+  -webkit-animation: dash-out 0.7s ease-in-out forwards;
+  animation: dash-out 0.7s ease-in-out forwards;
 }
 
 .swiper__buttons .swiper-button-next .circle:hover,
 .swiper__buttons .swiper-button-prev .circle:hover {
-  -webkit-animation: dash-in .7s ease-in-out forwards;
-  animation: dash-in .7s ease-in-out forwards;
+  -webkit-animation: dash-in 0.7s ease-in-out forwards;
+  animation: dash-in 0.7s ease-in-out forwards;
 }
 
 .swiper__buttons .swiper-button-prev {
@@ -632,24 +652,6 @@ nav .container .nav__content .nav__btn a::after {
   display: none;
 }
 
-@-webkit-keyframes slide {
-  0% {
-    left: -100vw;
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes slide {
-  0% {
-    left: -100vw;
-  }
-  100% {
-    left: 0;
-  }
-}
-
 @-webkit-keyframes main {
   from {
     opacity: 0;
@@ -672,7 +674,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper__header {
     font-size: 2.5rem;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 400px !important;
   }
 }
@@ -690,7 +697,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper__header {
     font-size: 2.3rem;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 400px;
   }
 }
@@ -699,7 +711,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper__header {
     font-size: 1.8rem;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     max-height: 370px;
   }
   .swiper.text {
@@ -717,7 +734,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper.text {
     width: 160vw;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 600px;
     width: 550px;
   }
@@ -727,7 +749,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper.text {
     width: 200vw;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 480px;
     width: 480px;
   }
@@ -743,7 +770,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper.text {
     width: 200vw;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 400px;
     max-width: 400px;
   }
@@ -759,7 +791,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper.text {
     width: 250vw;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 330px;
   }
 }
@@ -771,7 +808,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper.text {
     width: 250vw;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 290px !important;
   }
 }
@@ -780,7 +822,12 @@ nav .container .nav__content .nav__btn a::after {
   .swiper.text {
     width: 250vw;
   }
-  #main .swiper__container .swiper .swiper-wrapper .swiper-slide .slide__img {
+  #main
+.swiper__container
+.swiper
+.swiper-wrapper
+.swiper-slide
+.slide__img {
     height: 300px;
     max-width: 300px;
   }
