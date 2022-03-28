@@ -16,9 +16,9 @@ body {
 
 .btn {
   position: relative;
-  font-size: .687rem;
+  font-size: 0.687rem;
   font-weight: 700;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   padding: 5px 0;
   text-transform: uppercase;
   color: rgba(29, 31, 38, 0.5);
@@ -153,24 +153,6 @@ body {
   display: inline-block;
   -webkit-animation: text 0.8s ease;
   animation: text 0.8s ease;
-}
-
-@-webkit-keyframes slide {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0;
-  }
-}
-
-@keyframes slide {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0;
-  }
 }
 
 @media (max-width: 360px) {
