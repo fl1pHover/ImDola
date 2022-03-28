@@ -62,40 +62,64 @@ img {
   height: 500vh;
   width: 100vw;
   top: 0;
-  left: -100vw;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   z-index: 1000;
 }
 
 .transition.slide .cover1 {
   background-color: #1d1f26;
-  -webkit-animation: slide 0.5s ease-in forwards;
-  animation: slide 0.5s ease-in forwards;
+  -webkit-animation: slide 1.2s ease-in forwards;
+  animation: slide 1.2s ease-in forwards;
 }
 
 .transition.slide .cover2 {
   background-color: white;
-  -webkit-animation: slide 0.5s ease-in forwards;
-  animation: slide 0.5s ease-in forwards;
-  -moz-animation: slide 0.5s ease-in forwards;
+  -webkit-animation: slide 1.2s ease-in forwards;
+  animation: slide 1.2s ease-in forwards;
+  -moz-animation: slide 1.2s ease-in forwards;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
 @keyframes slide {
   0% {
-    left: -100vw;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    left: 0vw;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
 }
 
 @-webkit-keyframes slide {
   0% {
-    left: -100vw;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    left: 0vw;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transform-origin: right;
+            transform-origin: right;
   }
 }
 
