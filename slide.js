@@ -8,8 +8,8 @@ function clicker(teemaa) {
 	transition.classList.add('slide');
 	setTimeout(() => {
 		window.location = teemaa;
-	}, 900);]
-	console.log('asdfasdf')
+	}, 900);
+	console.log('asdfasdf');
 	// document.body.classList.remove('js-loading');
 }
 
