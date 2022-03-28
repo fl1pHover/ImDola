@@ -87,6 +87,7 @@ img {
   }
   to {
     left: 0vw;
+    width: 0;
   }
 }
 
@@ -96,6 +97,7 @@ img {
   }
   to {
     left: 0vw;
+    width: 0;
   }
 }
 
