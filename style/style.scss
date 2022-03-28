@@ -103,11 +103,9 @@ img {
 		transform: translateX(-100%);
 		transform-origin: left;
 	}
-	50% {
-		transform: translateX(0);
-	}
+
 	100% {
-		transform: translateX(100%);
+		transform: translateX(0);
 		transform-origin: right;
 	}
 }
@@ -116,11 +114,9 @@ img {
 		transform: translateX(-100%);
 		transform-origin: left;
 	}
-	50% {
-		transform: translateX(0);
-	}
+
 	100% {
-		transform: translateX(100%);
+		transform: translateX(0);
 		transform-origin: right;
 	}
 }
