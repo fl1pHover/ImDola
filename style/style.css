@@ -137,6 +137,9 @@ img {
   0% {
     left: -100vw;
   }
+  50% {
+    display: block;
+  }
   100% {
     left: 0vw;
     display: none;
