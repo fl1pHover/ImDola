@@ -1,25 +1,25 @@
 .content__p {
-    display: inline-block;
-    width: 100%;
-    a {
-        color: white;
-        text-transform: uppercase;
-        text-decoration: underline;
-    }
+	display: inline-block;
+	width: 100%;
+	a {
+		color: white;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
 }
 
 .play__link {
-    display: flex;
-    align-items: center;
-    .play__btn {
-        font-size: 34px;
-        margin-left: 5px;
-    }
-    &:hover {
-        opacity: 0.7;
-    }
+	display: flex;
+	align-items: center;
+	.play__btn {
+		font-size: 34px;
+		margin-left: 5px;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .content__logo {
-    margin-top: 50px;
+	margin-top: 50px;
 }

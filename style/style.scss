@@ -1,6 +1,5 @@
-@import 'transition';
+// @import 'transition';
 @import 'var';
-@import 'mobile';
 @import 'flexCenter';
 body {
 	font-family: 'Nunito', sans-serif;
@@ -47,10 +46,6 @@ body {
 
 a {
 	text-decoration: none;
-}
-
-img {
-	pointer-events: none;
 }
 
 .cover {
