@@ -79,25 +79,25 @@ a {
 
 @-webkit-keyframes slide {
   0% {
-    left: 0vw;
+    left: -100vw;
   }
   50% {
     left: 0vw;
   }
   100% {
-    left: 0vw;
+    left: -100vw;
   }
 }
 
 @keyframes slide {
   0% {
-    left: 0vw;
+    left: -100vw;
   }
   50% {
     left: 0vw;
   }
   100% {
-    left: 0vw;
+    left: -100vw;
   }
 }
 

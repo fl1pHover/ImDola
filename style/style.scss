@@ -72,7 +72,7 @@ a {
 
 @keyframes slide {
 	0% {
-		left: 0vw;
+		left: -100vw;
 	}
 
 	50% {
@@ -80,7 +80,7 @@ a {
 	}
 
 	100% {
-		left: 0vw;
+		left: -100vw;
 	}
 }
 // @-moz-keyframes slide {
