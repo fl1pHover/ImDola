@@ -54,6 +54,7 @@ img {
 }
 
 .cover {
+	// @include pageTransition();
 	position: absolute;
 	height: 500vh;
 	width: 100vw;
@@ -63,15 +64,15 @@ img {
 }
 .transition.slide .cover1 {
 	background-color: $dark;
-	-webkit-animation: slide 0.5s ease-in forwards;
-	-moz-animation: slide 0.5s ease-in forwards;
-	animation: slide 0.5s ease-in forwards;
+	-webkit-animation: slide 0.5s ease-in both;
+	-moz-animation: slide 0.5s ease-in both;
+	animation: slide 0.5s ease-in both;
 }
 .transition.slide .cover2 {
 	background-color: white;
-	-webkit-animation: slide 0.5s ease-in forwards;
-	animation: slide 0.5s ease-in forwards;
-	-moz-animation: slide 0.5s ease-in forwards;
+	-webkit-animation: slide 0.5s ease-in both;
+	animation: slide 0.5s ease-in both;
+	-moz-animation: slide 0.5s ease-in both;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 }
@@ -79,6 +80,15 @@ img {
 	0% {
 		left: -100vw;
 	}
+	100% {
+		left: 0vw;
+	}
+}
+@-moz-keyframes slide {
+	0% {
+		left: -100vw;
+	}
+
 	100% {
 		left: 0vw;
 	}
