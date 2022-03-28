@@ -310,7 +310,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 900px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
 	.content__header {
 		width: 850px !important;
 		font-size: 8rem;
@@ -323,7 +323,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 800px) and (max-width: 900px) {
+@media (max-width: 900px) {
 	.content__header {
 		font-size: 7rem;
 		width: 750px !important;
@@ -340,7 +340,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 700px) and (max-width: 800px) {
+@media (max-width: 800px) {
 	.content__header {
 		font-size: 6rem;
 		width: 650px !important;
@@ -366,7 +366,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 600px) and (max-width: 700px) {
+@media (max-width: 700px) {
 	nav .container .nav__content .nav__btn a,
 	nav .container .nav__content .nav__btn span {
 		font-size: 10px !important;
@@ -395,7 +395,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 480px) and (max-width: 600px) {
+@media (max-width: 600px) {
 	nav .container .nav__content .nav__btn a,
 	nav .container .nav__content .nav__btn span {
 		font-size: 10px !important;
@@ -427,7 +427,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 430px) and (max-width: 480px) {
+@media (max-width: 480px) {
 	nav .container .nav__content .nav__btn a,
 	nav .container .nav__content .nav__btn span {
 		font-size: 10px !important;
@@ -460,7 +460,7 @@ nav .container .nav__content .nav__btn a::after {
 	}
 }
 
-@media (min-width: 360px) and (max-width: 430px) {
+@media (max-width: 430px) {
 	nav .container .nav__content .nav__btn a,
 	nav .container .nav__content .nav__btn span {
 		font-size: 10px !important;
