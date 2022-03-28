@@ -3,13 +3,14 @@ var link = document.querySelector('.link');
 
 // Animation class
 var transition = document.querySelector('.transition');
-
+var cover = document.getElementsByClassName('cover');
 function clicker(teemaa) {
 	transition.classList.add('slide');
-	if (history.length < 3) {
-		setTimeout(() => {
-			window.location = teemaa;
-		}, 900);
-	}
+	setTimeout(() => {
+		window.location = teemaa;
+	}, 900);
 	// document.body.classList.remove('js-loading');
 }
+window.onpopstate = e => {
+	cover[0].style.display = 'none';
+};
