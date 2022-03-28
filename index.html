@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onLoad=" LoadOnce()">
     <!-- Page loader  -->
     <div class="loader">
         <span></span>
@@ -257,6 +257,13 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+    <script language=" JavaScript">
+
+        function LoadOnce() {
+            window.location.reload();
+        }
+
     </script>
 
 
