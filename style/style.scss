@@ -105,10 +105,12 @@ a {
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 }
+
 @keyframes slide {
 	0% {
 		left: -100vw;
 	}
+
 	50% {
 		left: 0vw;
 	}
