@@ -13,6 +13,7 @@ function clicker(teemaa) {
 jQuery(document).ready(function ($) {
 	if (window.history && window.history.pushState) {
 		$(window).on('popstate', function () {
+			console.log(document.querySelectorAll('.cover1')[0]);
 			document.querySelectorAll('.cover1')[0].style.display = 'none';
 		});
 	}
