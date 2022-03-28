@@ -78,9 +78,8 @@ a {
 	50% {
 		left: 0vw;
 	}
-
 	100% {
-		left: -100vw;
+		display: none;
 	}
 }
 // @-moz-keyframes slide {
