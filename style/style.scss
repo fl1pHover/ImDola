@@ -55,13 +55,13 @@ a {
 	left: -100vw;
 	z-index: 1000;
 }
-.transition.slide .cover1 {
+.transition .cover1 {
 	background-color: $dark;
 	-webkit-animation: slide 0.5s ease-in forwards;
 	-moz-animation: slide 0.5s ease-in forwards;
 	animation: slide 0.5s ease-in forwards;
 }
-.transition.slide .cover2 {
+.transition .cover2 {
 	background-color: white;
 	-webkit-animation: slide 0.5s ease-in forwards;
 	animation: slide 0.5s ease-in forwards;
