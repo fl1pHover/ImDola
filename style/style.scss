@@ -1,4 +1,4 @@
-// @import 'transition';
+@import 'transition';
 @import 'var';
 @import 'mobile';
 @import 'flexCenter';
@@ -131,15 +131,12 @@ img {
 	top: 0;
 	left: -100vw;
 	z-index: 1000;
-	animation: slide 0.5s ease-in forwards;
-	display: none;
 }
 .transition.slide .cover1 {
 	background-color: $dark;
 	-webkit-animation: slide 0.5s ease-in forwards;
 	-moz-animation: slide 0.5s ease-in forwards;
 	animation: slide 0.5s ease-in forwards;
-	display: none;
 }
 .transition.slide .cover2 {
 	background-color: white;
@@ -148,17 +145,15 @@ img {
 	-moz-animation: slide 0.5s ease-in forwards;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
-	display: none;
 }
 @keyframes slide {
 	0% {
 		left: -100vw;
 	}
-	50% {
-		display: block;
-	}
+
 	100% {
 		left: 0vw;
+		display: none;
 	}
 }
 
