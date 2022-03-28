@@ -9,5 +9,9 @@ function clicker(teemaa) {
 	setTimeout(() => {
 		window.location = teemaa;
 	}, 900);
-	document.body.classList.remove('js-loading');
+	// document.body.classList.remove('js-loading');
 }
+
+window.onpopstate = function (teemaa) {
+	clicker(teemaa);
+};
