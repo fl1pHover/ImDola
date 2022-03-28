@@ -12,6 +12,6 @@ function clicker(teemaa) {
 	// document.body.classList.remove('js-loading');
 }
 
-window.onpopstate = function (teemaa) {
-	clicker(teemaa);
+window.onpopstate = function () {
+	console.log('asdf');
 };
