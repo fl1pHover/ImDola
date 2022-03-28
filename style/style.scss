@@ -368,7 +368,7 @@ nav {
 							height: 110%;
 							-o-object-fit: cover;
 							object-fit: cover;
-							transform: 0.1s ease;
+							transition: 0.1s ease;
 							transition-delay: 0.95s;
 						}
 						.gif {
