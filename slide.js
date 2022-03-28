@@ -3,7 +3,6 @@ var link = document.querySelector('.link');
 
 // Animation class
 var transition = document.querySelector('.transition');
-var cover = document.getElementsByClassName('cover');
 function clicker(teemaa) {
 	transition.classList.add('slide');
 	setTimeout(() => {
@@ -14,7 +13,7 @@ function clicker(teemaa) {
 jQuery(document).ready(function ($) {
 	if (window.history && window.history.pushState) {
 		$(window).on('popstate', function () {
-			cover[0].style.display = 'none';
+			document.querySelectorAll('.cover1')[0].style.display = 'none';
 		});
 	}
 });
