@@ -10,9 +10,14 @@ function clicker(teemaa) {
 	}, 900);
 	// document.body.classList.remove('js-loading');
 }
-jQuery(document).ready(function ($) {
-	$(window).on('popstate', function () {
-		console.log(document.querySelectorAll('.cover1')[0]);
-		document.querySelectorAll('.cover1')[0].style.display = 'none';
-
-});
+window.onpopstate = function (event) {
+	alert(
+		'location: ' +
+			document.location +
+			', state: ' +
+			JSON.stringify(event.state)
+	);
+	const urlParams = new URLSearchParams(window.location.search);
+	const myParam = urlParams.get('myParam');
+	//update model accordingly
+};
