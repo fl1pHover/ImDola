@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/img/dolaFavicon.jpg" />
+    <link rel="icon" type="image/x-icon" href="img/dolaFavicon.ico">
+
     <title>Email - Im Dola</title>
 
     <!-- Style -->
@@ -99,7 +100,7 @@
 
     <!-- Page link and transition -->
     <script>
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             $('.loader').fadeOut(1000);
             $('.content').fadeIn(1000);
             $('.email').fadeIn(1000);
@@ -139,9 +140,9 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
+                method: 'POST',
+                body: new FormData(form)
+            })
                 .then(response => alert("Амжилттай бүртгэгдлээ"))
                 .catch(error => console.error('Error!', error.message));
 

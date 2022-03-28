@@ -6,13 +6,10 @@ var transition = document.querySelector('.transition');
 
 function clicker(teemaa) {
 	transition.classList.add('slide');
-	setTimeout(() => {
-		window.location = teemaa;
-	}, 900);
-	console.log('asdfasdf');
+	if (history.length < 3) {
+		setTimeout(() => {
+			window.location = teemaa;
+		}, 900);
+	}
 	// document.body.classList.remove('js-loading');
 }
-
-window.onpopstate = function (event) {
-	console.log(event);
-};
