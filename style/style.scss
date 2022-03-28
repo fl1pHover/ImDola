@@ -112,6 +112,9 @@ a {
 	100% {
 		left: 0vw;
 	}
+	0% {
+		left: -100vw;
+	}
 }
 @-moz-keyframes slide {
 	0% {
@@ -120,6 +123,10 @@ a {
 
 	100% {
 		left: 0vw;
+	}
+
+	0% {
+		left: -100vw;
 	}
 }
 @-webkit-keyframes slide {
