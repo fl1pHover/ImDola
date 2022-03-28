@@ -25,24 +25,34 @@
 		0% {
 			left: -100vw;
 		}
-		100% {
+		50% {
 			left: 0;
+		}
+		100% {
+			left: 100vw;
 		}
 	}
 	@-moz-keyframes slide {
 		0% {
 			left: -100vw;
 		}
-		100% {
+
+		50% {
 			left: 0;
+		}
+		100% {
+			left: 100vw;
 		}
 	}
 	@keyframes slide {
 		0% {
 			left: -100vw;
 		}
-		100% {
+		50% {
 			left: 0;
+		}
+		100% {
+			left: 100vw;
 		}
 	}
 }
