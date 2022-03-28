@@ -28,6 +28,7 @@
 
 	100% {
 		left: 0;
+		display: none;
 	}
 }
 @-moz-keyframes slide {
@@ -37,6 +38,7 @@
 
 	100% {
 		left: 0;
+		display: none;
 	}
 }
 @keyframes slide {
@@ -45,6 +47,7 @@
 	}
 	100% {
 		left: 0;
+		display: none;
 	}
 }
 // }
