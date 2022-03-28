@@ -1,4 +1,3 @@
-// @import 'transition';
 @import 'var';
 @import 'flexCenter';
 body {
@@ -47,41 +46,6 @@ body {
 a {
 	text-decoration: none;
 }
-
-// .cover {
-// 	position: absolute;
-// 	height: 500vh;
-// 	width: 100vw;
-// 	top: 0;
-// 	left: -100vw;
-// 	z-index: 1000;
-// }
-// .transition.slide .cover1 {
-// 	background-color: $dark;
-// 	-webkit-animation: slide 0.5s ease-in forwards;
-// 	-moz-animation: slide 0.5s ease-in forwards;
-// 	animation: slide 0.5s ease-in forwards;
-// }
-// .transition.slide .cover2 {
-// 	background-color: white;
-// 	-webkit-animation: slide 0.5s ease-in forwards;
-// 	animation: slide 0.5s ease-in forwards;
-// 	-moz-animation: slide 0.5s ease-in forwards;
-// 	-webkit-animation-delay: 0.3s;
-// 	animation-delay: 0.3s;
-// }
-// @keyframes slide {
-// 	0% {
-// 		left: -100vw;
-// 	}
-// 	50% {
-// 		display: block;
-// 	}
-// 	100% {
-// 		left: 0vw;
-// 		display: none;
-// 	}
-// }
 
 .cover {
 	position: absolute;
