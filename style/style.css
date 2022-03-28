@@ -60,42 +60,42 @@ img {
 .cover {
   position: absolute;
   height: 500vh;
-  width: 200vw;
+  width: 100vw;
   top: 0;
-  left: -200vw;
+  left: -100vw;
   z-index: 1000;
 }
 
 .transition.slide .cover1 {
   background-color: #1d1f26;
-  -webkit-animation: slide 1.5s ease-in forwards;
-  animation: slide 1.5s ease-in forwards;
+  -webkit-animation: slide 0.5s ease-in forwards;
+  animation: slide 0.5s ease-in forwards;
 }
 
 .transition.slide .cover2 {
   background-color: white;
-  -webkit-animation: slide 1.5s ease-in forwards;
-  animation: slide 1.5s ease-in forwards;
-  -moz-animation: slide 1.5s ease-in forwards;
+  -webkit-animation: slide 0.5s ease-in forwards;
+  animation: slide 0.5s ease-in forwards;
+  -moz-animation: slide 0.5s ease-in forwards;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
 @keyframes slide {
   0% {
-    left: -200vw;
+    left: -100vw;
   }
   100% {
-    left: 100vw;
+    left: 0vw;
   }
 }
 
 @-webkit-keyframes slide {
   0% {
-    left: -200vw;
+    left: -100vw;
   }
   100% {
-    left: 100vw;
+    left: 0vw;
   }
 }
 
