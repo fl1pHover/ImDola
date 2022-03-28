@@ -226,9 +226,10 @@ nav {
 		.nav__content {
 			@include flexCenter(space-between, row);
 			.nav__pro {
-				@include flexCenter(none, row);
+				@include flexCenter(flex-start, row);
 				padding: 1px;
 				cursor: pointer;
+
 				&:hover {
 					.pro__img img {
 						transform: scale(1.1);
@@ -256,7 +257,7 @@ nav {
 						font-size: 0.812rem;
 						font-weight: 700;
 						letter-spacing: 0.05em;
-						color: dark;
+						color: $dark;
 						&.gray {
 							margin-left: 5px;
 						}
@@ -316,7 +317,7 @@ nav {
 		place-items: center;
 		position: relative;
 		.swiper {
-			@include flexCenter(center, none);
+			@include flexCenter(center, row);
 			width: 100vw;
 			white-space: nowrap;
 			// position: relative;
@@ -352,7 +353,7 @@ nav {
 						position: relative;
 						overflow: hidden;
 						// delgets jijgereheer zurag jijgerehgui bsn uchir flex bolhov
-						@include flexCenter(center, none);
+						@include flexCenter(center, row);
 						img {
 							display: block;
 							height: 110%;
@@ -367,7 +368,7 @@ nav {
 							height: 110%;
 							-o-object-fit: cover;
 							object-fit: cover;
-							transform: 0.1 ease;
+							transform: 0.1s ease;
 							transition-delay: 0.95s;
 						}
 						.gif {

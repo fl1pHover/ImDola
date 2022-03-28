@@ -261,9 +261,9 @@ nav .container .nav__content .nav__pro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -310,7 +310,7 @@ nav .container .nav__content .nav__pro .full__name .name {
   font-size: 0.812rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: dark;
+  color: #1d1f26;
 }
 
 nav .container .nav__content .nav__pro .full__name .name.gray {
@@ -386,10 +386,10 @@ nav .container .nav__content .nav__btn a::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: none;
-          flex-direction: none;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -448,10 +448,10 @@ nav .container .nav__content .nav__btn a::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: none;
-          flex-direction: none;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -474,8 +474,8 @@ nav .container .nav__content .nav__btn a::after {
   height: 110%;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-transform: 0.1 ease;
-          transform: 0.1 ease;
+  -webkit-transform: 0.1s ease;
+          transform: 0.1s ease;
   -webkit-transition-delay: 0.95s;
           transition-delay: 0.95s;
 }
