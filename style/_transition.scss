@@ -1,53 +1,97 @@
 // @mixin pageTransition() {
-// .cover {
-// 	position: absolute;
-// 	height: 500vh;
-// 	width: 100vw;
-// 	top: 0;
-// 	left: -100vw;
-// 	z-index: 1000;
-// }
-// .transition.slide .cover1 {
-// 	background-color: $dark;
-// 	-webkit-animation: slide 0.5s ease-in forwards;
-// 	-moz-animation: slide 0.5s ease-in forwards;
-// 	animation: slide 0.5s ease-in forwards;
-// }
-// .transition.slide .cover2 {
-// 	background-color: white;
-// 	-webkit-animation: slide 0.5s ease-in forwards;
-// 	animation: slide 0.5s ease-in forwards;
-// 	-moz-animation: slide 0.5s ease-in forwards;
-// 	-webkit-animation-delay: 0.3s;
-// 	animation-delay: 0.3s;
-// }
-// @-webkit-keyframes slide {
-// 	0% {
+// 	.cover {
+// 		position: absolute;
+// 		height: 500vh;
+// 		width: 100vw;
+// 		top: 0;
 // 		left: -100vw;
+// 		z-index: 1000;
 // 	}
+// 	.transition.slide .cover1 {
+// 		background-color: $dark;
+// 		-webkit-animation: slide 0.5s ease-in forwards;
+// 		-moz-animation: slide 0.5s ease-in forwards;
+// 		animation: slide 0.5s ease-in forwards;
+// 	}
+// 	.transition.slide .cover2 {
+// 		background-color: white;
+// 		-webkit-animation: slide 0.5s ease-in forwards;
+// 		animation: slide 0.5s ease-in forwards;
+// 		-moz-animation: slide 0.5s ease-in forwards;
+// 		-webkit-animation-delay: 0.3s;
+// 		animation-delay: 0.3s;
+// 	}
+// 	@-webkit-keyframes slide {
+// 		0% {
+// 			left: -100vw;
+// 		}
 
-// 	100% {
-// 		left: 0;
-// 		display: none;
+// 		100% {
+// 			left: 0;
+// 		}
 // 	}
-// }
-// @-moz-keyframes slide {
-// 	0% {
-// 		left: -100vw;
-// 	}
+// 	@-moz-keyframes slide {
+// 		0% {
+// 			left: -100vw;
+// 		}
 
-// 	100% {
-// 		left: 0;
-// 		display: none;
+// 		100% {
+// 			left: 0;
+// 		}
+// 	}
+// 	@keyframes slide {
+// 		0% {
+// 			left: -100vw;
+// 		}
+// 		100% {
+// 			left: 0;
+// 		}
 // 	}
 // }
-// @keyframes slide {
-// 	0% {
-// 		left: -100vw;
-// 	}
-// 	100% {
-// 		left: 0;
-// 		display: none;
-// 	}
-// }
-// }
+
+// Page transition
+.cover {
+	position: fixed;
+	height: 100vh;
+	width: 200vw;
+	top: 0;
+	left: -200vw;
+	z-index: 1000;
+}
+
+.transition.slide .cover1 {
+	background-color: $dark;
+	-webkit-animation: slide 1.5s ease-in forwards;
+	-moz-animation: slide 1.5s ease-in forwards;
+	animation: slide 1.5s ease-in forwards;
+}
+
+.transition.slide .cover2 {
+	background-color: white;
+	-webkit-animation: slide 1.5s ease-in forwards;
+	-moz-animation: slide 1.5s ease-in forwards;
+	animation: slide 1.5s ease-in forwards;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+// Page transition animation
+@-webkit-keyframes slide {
+	0% {
+		left: -200vw;
+	}
+
+	100% {
+		left: -100vw;
+	}
+}
+
+@keyframes slide {
+	0% {
+		left: -200vw;
+	}
+
+	100% {
+		left: -100vw;
+	}
+}
