@@ -86,15 +86,15 @@ img {
 }
 .transition.slide .cover1 {
 	background-color: $dark;
-	-webkit-animation: slide 0.5s ease-in backwards;
-	animation: slide 0.5s ease-in backwards;
+	-webkit-animation: slide 1s ease-in backwards;
+	animation: slide 1s ease-in backwards;
 	width: 100%;
 }
 .transition.slide .cover2 {
 	background-color: white;
-	-webkit-animation: slide 0.5s ease-in backwards;
-	animation: slide 0.5s ease-in backwards;
-	-moz-animation: slide 0.5s ease-in backwards;
+	-webkit-animation: slide 1s ease-in backwards;
+	animation: slide 1s ease-in backwards;
+	-moz-animation: slide 1s ease-in backwards;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 	width: 100%;
@@ -104,8 +104,11 @@ img {
 		width: 0;
 	}
 
-	100% {
+	50% {
 		width: 100vw;
+	}
+	100% {
+		width: 0;
 	}
 }
 @keyframes slide {
@@ -113,8 +116,11 @@ img {
 		width: 0;
 	}
 
-	100% {
+	50% {
 		width: 100vw;
+	}
+	100% {
+		width: 0;
 	}
 }
 
