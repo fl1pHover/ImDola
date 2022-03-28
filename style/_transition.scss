@@ -11,7 +11,6 @@
 		background-color: $dark;
 		-webkit-animation: slide 0.5s ease-in forwards;
 		animation: slide 0.5s ease-in forwards;
-		visibility: hidden;
 	}
 	.transition.slide .cover2 {
 		background-color: white;
@@ -19,47 +18,29 @@
 		animation: slide 0.5s ease-in forwards;
 		-webkit-animation-delay: 0.3s;
 		animation-delay: 0.3s;
-		visibility: hidden;
 	}
 	@-webkit-keyframes slide {
 		0% {
-			visibility: hidden;
-		}
-		1% {
-			visibility: visible;
-			left: 0;
+			left: -100vw;
 		}
 		100% {
-			visibility: hidden;
+			left: 0;
+		}
+	}
+	@-moz-keyframes slide {
+		0% {
+			left: -100vw;
+		}
+		100% {
+			left: 0;
 		}
 	}
 	@keyframes slide {
 		0% {
-			visibility: hidden;
-		}
-		1% {
-			visibility: visible;
-			left: 0;
+			left: -100vw;
 		}
 		100% {
-			visibility: hidden;
+			left: 0;
 		}
 	}
-	// @-webkit-keyframes slide {
-	// 	0% {
-	// 		left: -100vw;
-
-	// 	}
-	// 	100% {
-	// 		left: 0;
-	// 	}
-	// }
-	// @keyframes slide {
-	// 	0% {
-	// 		left: -100vw;
-	// 	}
-	// 	100% {
-	// 		left: 0;
-	// 	}
-	// }
 }

@@ -204,10 +204,10 @@
         </div>
     </section>
     <script>
-        window.onpopstate = function (event) {
-            clicker(teemaa);
+        window.addEventListener("popstate", function () {
+            clicker(history.back());
 
-        }
+        })
     </script>
 
     <!-- Page link and transition -->

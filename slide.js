@@ -4,9 +4,9 @@ var link = document.querySelector('.link');
 // Animation class
 var transition = document.querySelector('.transition');
 
-function clicker(teemaa) {
+function clicker(page) {
 	transition.classList.add('slide');
 	setTimeout(() => {
-		window.location = teemaa;
+		window.location = page;
 	}, 900);
 }
