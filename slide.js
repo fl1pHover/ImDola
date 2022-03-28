@@ -11,6 +11,12 @@ function clicker(teemaa) {
 	}, 900);
 	// document.body.classList.remove('js-loading');
 }
-if (history.length > 2) {
-	cover[0].style.display = 'none';
+
+while (true) {
+	setTimeout(() => {
+		if (history.length > 2) {
+			cover[0].style.display = 'none';
+			break
+		}
+	}, 1000);
 }
