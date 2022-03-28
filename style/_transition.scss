@@ -108,6 +108,7 @@
 	left: -100vw;
 	z-index: 1000;
 	animation: slide 0.5s ease-in forwards;
+	display: none;
 }
 .transition.slide .cover1 {
 	background-color: $dark;
