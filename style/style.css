@@ -66,8 +66,6 @@ a {
   background-color: #1d1f26;
   -webkit-animation: slide 0.5s ease-in forwards;
   animation: slide 0.5s ease-in forwards;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .transition.slide .cover2 {
@@ -77,13 +75,11 @@ a {
   -moz-animation: slide 0.5s ease-in forwards;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 @-webkit-keyframes slide {
   0% {
-    left: -100vw;
+    left: 100vw;
   }
   100% {
     left: 0vw;
@@ -92,7 +88,7 @@ a {
 
 @keyframes slide {
   0% {
-    left: -100vw;
+    left: 100vw;
   }
   100% {
     left: 0vw;
