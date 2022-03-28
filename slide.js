@@ -10,14 +10,18 @@ function clicker(teemaa) {
 	}, 900);
 	// document.body.classList.remove('js-loading');
 }
-window.onpopstate = function (event) {
-	alert(
-		'location: ' +
-			document.location +
-			', state: ' +
-			JSON.stringify(event.state)
-	);
-	const urlParams = new URLSearchParams(window.location.search);
-	const myParam = urlParams.get('myParam');
-	//update model accordingly
-};
+// window.onpopstate = function (event) {
+// 	alert(
+// 		'location: ' +
+// 			document.location +
+// 			', state: ' +
+// 			JSON.stringify(event.state)
+// 	);
+// 	const urlParams = new URLSearchParams(window.location.search);
+// 	const myParam = urlParams.get('myParam');
+// 	//update model accordingly
+// };
+
+window.addEventListener('popstate', () => {
+	window.querySelector('cover').addclas;
+});
