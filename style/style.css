@@ -68,15 +68,15 @@ img {
 
 .transition.slide .cover1 {
   background-color: #1d1f26;
-  -webkit-animation: slide 0.5s ease-in both;
-  animation: slide 0.5s ease-in both;
+  -webkit-animation: slide 0.5s ease-in backwards;
+  animation: slide 0.5s ease-in backwards;
 }
 
 .transition.slide .cover2 {
   background-color: white;
-  -webkit-animation: slide 0.5s ease-in both;
-  animation: slide 0.5s ease-in both;
-  -moz-animation: slide 0.5s ease-in both;
+  -webkit-animation: slide 0.5s ease-in backwards;
+  animation: slide 0.5s ease-in backwards;
+  -moz-animation: slide 0.5s ease-in backwards;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
