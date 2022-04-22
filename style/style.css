@@ -23,7 +23,7 @@ body {
   user-select: none;
   height: 100%;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #main {
